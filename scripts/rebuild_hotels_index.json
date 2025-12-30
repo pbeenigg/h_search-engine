@@ -1,0 +1,140 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1,
+      "max_result_window": 10000,
+      "refresh_interval": "5s",
+      "analysis": {
+        "analyzer": {
+          "std_lc": {
+            "type": "custom",
+            "tokenizer": "standard",
+            "filter": ["lowercase", "asciifolding"]
+          },
+          "pinyin_analyzer": {
+            "type": "custom",
+            "tokenizer": "pinyin",
+            "filter": ["lowercase"]
+          },
+          "cn_ik_max_syn": {
+            "type": "custom",
+            "tokenizer": "ik_max_word",
+            "filter": ["lowercase", "hotel_synonym"]
+          },
+          "cn_ik_smart_syn": {
+            "type": "custom",
+            "tokenizer": "ik_smart",
+            "filter": ["lowercase", "hotel_synonym"]
+          }
+        },
+        "normalizer": {
+          "lowercase_normalizer": {
+            "type": "custom",
+            "filter": ["lowercase"]
+          }
+        },
+        "filter": {
+          "hotel_synonym": {
+            "type": "synonym",
+            "lenient": true,
+            "expand": true,
+            "updateable": true,
+            "synonyms_path": "analysis/hotel_synonyms.txt"
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "dynamic": "false",
+    "properties": {
+      "tagSource": {"type": "keyword"},
+      "providerSource": {"type": "keyword", "normalizer": "lowercase_normalizer"},
+      "hotelId": {"type": "long"},
+
+      "nameCn": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "cn_ik_smart_syn",
+        "fields": {
+          "keyword": {"type": "keyword", "ignore_above": 256},
+          "pinyin": {
+            "type": "text",
+            "analyzer": "pinyin_analyzer"
+          }
+        }
+      },
+      "nameEn": {
+        "type": "text",
+        "analyzer": "std_lc",
+        "fields": {
+          "keyword": {"type": "keyword", "ignore_above": 256}
+        }
+      },
+
+      "countryCn": {"type": "keyword"},
+      "countryEn": {"type": "keyword"},
+      "countryCode": {"type": "keyword"},
+      "cityCn": {"type": "keyword"},
+      "cityEn": {"type": "keyword"},
+      "regionCn": {"type": "keyword"},
+      "regionEn": {"type": "keyword"},
+      "continentCn": {"type": "keyword"},
+      "continentEn": {"type": "keyword"},
+
+      "addressCn": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "cn_ik_smart_syn",
+        "fields": {
+          "pinyin": {
+            "type": "text",
+            "analyzer": "pinyin_analyzer"
+          }
+        }
+      },
+      "addressEn": {
+        "type": "text",
+        "analyzer": "std_lc"
+      },
+
+      "lat": {"type": "double"},
+      "lon": {"type": "double"},
+      "location": {"type": "geo_point"},
+
+
+      "groupCn": {"type": "keyword"},
+      "groupEn": {"type": "keyword"},
+      "brandCn": {"type": "keyword", "normalizer": "lowercase_normalizer"},
+      "brandEn": {"type": "keyword", "normalizer": "lowercase_normalizer"},
+
+      "accommodationType": {"type": "keyword"},
+      "searchEnable": {"type": "keyword"},
+      "tel": {"type": "keyword"},
+      "score": {"type": "double"},
+      "updatedAt": {
+           "type": "date",
+           "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+      },
+      "nameTokens": {"type": "keyword"},
+      "addressTokens": {"type": "keyword"},
+      "nameKeywords": {"type": "keyword"},
+      "nerPlaces": {"type": "keyword"},
+      "nerBrands": {"type": "keyword"},
+
+      "nameTraditional": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "ik_smart"
+      },
+      "addressTraditional": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "ik_smart"
+      },
+      "brandNames": {"type": "keyword"},
+      "geoHierarchy": {"type": "keyword"}
+    }
+  }
+}

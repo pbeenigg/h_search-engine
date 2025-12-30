@@ -1,0 +1,169 @@
+﻿序号,NEW_TYPE,大类,中类,小类,Big Category,Mid  Category,Sub Category
+504,100000,住宿服务,住宿服务相关,住宿服务相关,Accommodation Service,Accommodation Service Related,Accommodation Service Related
+505,100100,住宿服务,宾馆酒店,宾馆酒店,Accommodation Service,Hotel,Hotel
+506,100101,住宿服务,宾馆酒店,奢华酒店,Accommodation Service,Hotel,Luxury Hotel
+507,100102,住宿服务,宾馆酒店,五星级宾馆,Accommodation Service,Hotel,Five-star Hotel
+508,100103,住宿服务,宾馆酒店,四星级宾馆,Accommodation Service,Hotel,Four-star Hotel
+509,100104,住宿服务,宾馆酒店,三星级宾馆,Accommodation Service,Hotel,Three-star Hotel
+510,100105,住宿服务,宾馆酒店,经济型连锁酒店,Accommodation Service,Hotel,Economical Chain Hotel
+511,100200,住宿服务,旅馆招待所,旅馆招待所,Accommodation Service,Hostel,Hostel
+512,100201,住宿服务,旅馆招待所,青年旅舍,Accommodation Service,Hostel,Youth Hostel
+514,110100,风景名胜,公园广场,公园广场,Tourist Attraction,Park & Square,Park & Square
+515,110101,风景名胜,公园广场,公园,Tourist Attraction,Park & Square,Park
+516,110102,风景名胜,公园广场,动物园,Tourist Attraction,Park & Square,Zoo
+517,110103,风景名胜,公园广场,植物园,Tourist Attraction,Park & Square,Botanical Garden
+518,110104,风景名胜,公园广场,水族馆,Tourist Attraction,Park & Square,Aquarium
+519,110105,风景名胜,公园广场,城市广场,Tourist Attraction,Park & Square,City Plaza
+520,110106,风景名胜,公园广场,公园内部设施,Tourist Attraction,Park & Plaza,Facilities within the park
+522,110201,风景名胜,风景名胜,世界遗产,Tourist Attraction,Scenery Spot,World Heritage
+523,110202,风景名胜,风景名胜,国家级景点,Tourist Attraction,Scenery Spot,National View Spot
+524,110203,风景名胜,风景名胜,省级景点,Tourist Attraction,Scenery Spot,Provincial View Spot
+525,110204,风景名胜,风景名胜,纪念馆,Tourist Attraction,Scenery Spot,Memorial Hall
+526,110205,风景名胜,风景名胜,寺庙道观,Tourist Attraction,Scenery Spot,Buddhist & Taoist Temple
+527,110206,风景名胜,风景名胜,教堂,Tourist Attraction,Scenery Spot,Church
+528,110207,风景名胜,风景名胜,回教寺,Tourist Attraction,Scenery Spot,Mosque
+529,110208,风景名胜,风景名胜,海滩,Tourist Attraction,Scenery Spot,Beach
+530,110209,风景名胜,风景名胜,观景点,Tourist Attraction,Scenery Spot,View Point
+531,110210,风景名胜,风景名胜,红色景区,Tourist Attraction,Scenery Spot,Red scenic spot
+616,150100,交通设施服务,机场相关,机场相关,Transportation Service,Airport Related,Airport Related
+617,150101,交通设施服务,机场相关,候机室,Transportation Service,Airport Related,Departure Lounge
+618,150102,交通设施服务,机场相关,摆渡车站,Transportation Service,Airport Related,The Ferry Station
+619,150104,交通设施服务,机场相关,飞机场,Transportation Service,Airport Related,Airport
+620,150105,交通设施服务,机场相关,机场出发/到达,Transportation Service,Airport Related,Airport Departure/Arrival
+621,150106,交通设施服务,机场相关,直升机场,Transportation Service,Airport Related,Heliport
+622,150107,交通设施服务,机场相关,机场货运处,Transportation Service,Airport Related,Airport Freight Station
+623,150200,交通设施服务,火车站,火车站,Transportation Service,Railway Station,Railway Station
+634,150300,交通设施服务,港口码头,港口码头,Transportation Service,Port & Marina,Port & Marina
+642,150400,交通设施服务,长途汽车站,长途汽车站,Transportation Service,Coach Station,Coach Station
+646,150500,交通设施服务,地铁站,地铁站,Transportation Service,Subway Station,Subway Station
+647,150501,交通设施服务,地铁站,出入口,Transportation Service,Subway Station,Exit
+648,150600,交通设施服务,轻轨站,轻轨站,Transportation Service,Light Rail Station,Light Rail Station
+649,150700,交通设施服务,公交车站,公交车站相关,Transportation Service,Bus Station,Bus Station Related
+656,150800,交通设施服务,班车站,班车站,Transportation Service,Commuter Bus Station,Commuter Bus Station
+657,150900,交通设施服务,停车场,停车场相关,Transportation Service,Parking Lot,Parking Lot Related
+665,151000,交通设施服务,过境口岸,过境口岸,Transportation Service,Border Crossing,Border Crossing
+669,151100,交通设施服务,出租车,出租车,Transportation Service,Taxi,Taxi
+670,151200,交通设施服务,轮渡站,轮渡站,Transportation Service,Ferry Station,Ferry Station
+671,151300,交通设施服务,索道站,索道站,Transportation Service,Ropeway Station,Ropeway Station
+672,151400,交通设施服务,上下客区,上下客区,Transportation Service,Loading & Unloading Area,Loading & Unloading Area
+228,50100,餐饮服务,中餐厅,中餐厅,Food & Beverages,Chinese Food Restaurant,Chinese Food Restaurant
+252,50200,餐饮服务,外国餐厅,外国餐厅,Food & Beverages,Foreign Food Restaurant,Foreign Food Restaurant
+270,50300,餐饮服务,快餐厅,快餐厅,Food & Beverages,Fast Food Restaurant,Fast Food Restaurant
+282,50400,餐饮服务,休闲餐饮场所,休闲餐饮场所,Food & Beverages,Leisure Food Restaurant,Leisure Food Restaurant
+283,50500,餐饮服务,咖啡厅,咖啡厅,Food & Beverages,Coffee House,Coffee House
+288,50600,餐饮服务,茶艺馆,茶艺馆,Food & Beverages,Tea House,Tea House
+289,50700,餐饮服务,冷饮店,冷饮店,Food & Beverages,Icecream Shop,Icecream Shop
+290,50800,餐饮服务,糕饼店,糕饼店,Food & Beverages,Bakery,Bakery
+291,50900,餐饮服务,甜品店,甜品店,Food & Beverages,Dessert House,Dessert House
+293,60100,购物服务,商场,商场,Shopping,Shopping Plaza,Shopping Plaza
+294,60101,购物服务,商场,购物中心,Shopping,Shopping Plaza,Shopping Centre
+295,60102,购物服务,商场,普通商场,Shopping,Shopping Plaza,Shops
+296,60103,购物服务,商场,免税品店,Shopping,Shopping Plaza,Duty-free Shop
+297,60200,购物服务,便民商店/便利店,便民商店/便利店,Shopping,Convenience Store,Convenience Store
+300,60300,购物服务,家电电子卖场,家电电子卖场,Shopping,Home Electronics Hypermarket,Home Electronics Hypermarket
+309,60400,购物服务,超级市场,超市,Shopping,Supermarket,Supermarket
+323,60500,购物服务,花鸟鱼虫市场,花鸟鱼虫市场,Shopping,Plants & Pet Market,Plants & Pet Market
+326,60600,购物服务,家居建材市场,家居建材市场,Shopping,Home Building Materials Market,Home Building Materials Market
+333,60700,购物服务,综合市场,综合市场,Shopping,Comprehensive Market,Comprehensive Market
+349,61000,购物服务,特色商业街,特色商业街,Shopping,Commercial Street,Commercial Street
+350,61001,购物服务,特色商业街,步行街,Shopping,Commercial Street,Pedestrian Street
+351,61100,购物服务,服装鞋帽皮具店,服装鞋帽皮具店,Shopping,Clothing Store,Clothing Store
+356,61200,购物服务,专卖店,专营店,Shopping,Franchise Store,Franchise Store
+377,70100,生活服务,旅行社,旅行社,Daily Life Service,Travel Agency,Travel Agency
+382,70300,生活服务,售票处,售票处,Daily Life Service,Ticket Office,Ticket Office
+389,70400,生活服务,邮局,邮局,Daily Life Service,Post Office,Post Office
+391,70500,生活服务,物流速递,物流速递,Daily Life Service,Logistics Service,Logistics Service
+393,70600,生活服务,电讯营业厅,电讯营业厅,Daily Life Service,Telecom Office,Telecom Office
+432,80000,体育休闲服务,体育休闲服务场所,体育休闲服务场所,Sports & Recreation,Sports & Recreation Places,Sports & Recreation Places
+433,80100,体育休闲服务,运动场馆,运动场所,Sports & Recreation,Sports Stadium,Sports Places
+453,80200,体育休闲服务,高尔夫相关,高尔夫相关,Sports & Recreation,Golf Related,Golf Related
+456,80300,体育休闲服务,娱乐场所,娱乐场所,Sports & Recreation,Recreation Center,Recreation Center
+465,80400,体育休闲服务,度假疗养场所,度假疗养场所,Sports & Recreation,Holiday & Nursing Resort,Holiday & Nursing Resort
+466,80401,体育休闲服务,度假疗养场所,度假村,Sports & Recreation,Holiday & Nursing Resort,Resort
+467,80402,体育休闲服务,度假疗养场所,疗养院,Sports & Recreation,Holiday & Nursing Resort,Nursing Home
+468,80500,体育休闲服务,休闲场所,休闲场所,Sports & Recreation,Recreation Place,Recreation Place
+474,80600,体育休闲服务,影剧院,影剧院相关,Sports & Recreation,Theatre & Cinema,Theatre & Cinema Related
+478,90000,医疗保健服务,医疗保健服务场所,医疗保健服务场所,Medical Service,Medical and Health Care Service Place,Medical and Health Care Service Place
+479,90100,医疗保健服务,综合医院,综合医院,Medical Service,Hospital,Hospital
+482,90200,医疗保健服务,专科医院,专科医院,Medical Service,Special Hospital,Special Hospital
+494,90300,医疗保健服务,诊所,诊所,Medical Service,Clinic,Clinic
+495,90400,医疗保健服务,急救中心,急救中心,Medical Service,Emergency Center,Emergency Center
+496,90500,医疗保健服务,疾病预防机构,疾病预防,Medical Service,Disease Prevention Institution,Disease Prevention
+497,90600,医疗保健服务,医药保健销售店,医药保健相关,Medical Service,Pharmacy,Medicine Health Care Related
+500,90700,医疗保健服务,动物医疗场所,动物医疗场所,Medical Service,Veterinary Hospital,Veterinary Hospital
+532,120000,商务住宅,商务住宅相关,商务住宅相关,Commercial House,Commercial House Related,Commercial House Related
+533,120100,商务住宅,产业园区,产业园区,Commercial House,Industrial Park,Industrial Park
+534,120200,商务住宅,楼宇,楼宇相关,Commercial House,Building,Building Related
+535,120201,商务住宅,楼宇,商务写字楼,Commercial House,Building,Business Office Building
+536,120202,商务住宅,楼宇,工业大厦建筑物,Commercial House,Building,Industrial Building
+537,120203,商务住宅,楼宇,商住两用楼宇,Commercial House,Building,Commercial-residential Building
+538,120300,商务住宅,住宅区,住宅区,Commercial House,Residential Area,Residential Area
+539,120301,商务住宅,住宅区,别墅,Commercial House,Residential Area,Villa
+540,120302,商务住宅,住宅区,住宅小区,Commercial House,Residential Area,Residential Quarter
+541,120303,商务住宅,住宅区,宿舍,Commercial House,Residential Area,Dormitory
+542,120304,商务住宅,住宅区,社区中心,Commercial House,Residential Area,Community Center
+543,130000,政府机构及社会团体,政府及社会团体相关,政府及社会团体相关,Governmental Organization & Social Group,Governmental & Social Groups Related,Governmental & Social Groups Related
+544,130100,政府机构及社会团体,政府机关,政府机关相关,Governmental Organization & Social Group,Governmental Organization,Governmental Organization Related
+552,130200,政府机构及社会团体,外国机构,外国机构相关,Governmental Organization & Social Group,Foreign Organization,Foreign Organization Related
+553,130201,政府机构及社会团体,外国机构,外国使领馆,Governmental Organization & Social Group,Foreign Organization,Foreign Embassy and Consulate
+554,130202,政府机构及社会团体,外国机构,国际组织办事处,Governmental Organization & Social Group,Foreign Organization,Representative Office of International Organization
+555,130300,政府机构及社会团体,民主党派,民主党派,Governmental Organization & Social Group,Democratic Party,Democratic Party
+556,130400,政府机构及社会团体,社会团体,社会团体相关,Governmental Organization & Social Group,Social Group,Social Group Related
+566,130500,政府机构及社会团体,公检法机构,公检法机关,Governmental Organization & Social Group,Public Security Organization,Public Security Organization
+567,130501,政府机构及社会团体,公检法机构,公安警察,Governmental Organization & Social Group,Public Security Organization,Police Station
+568,130502,政府机构及社会团体,公检法机构,检察院,Governmental Organization & Social Group,Public Security Organization,Procuratorate
+569,130503,政府机构及社会团体,公检法机构,法院,Governmental Organization & Social Group,Public Security Organization,Court
+570,130504,政府机构及社会团体,公检法机构,消防机关,Governmental Organization & Social Group,Public Security Organization,Fire Fighting Organization
+571,130505,政府机构及社会团体,公检法机构,公证鉴定机构,Governmental Organization & Social Group,Public Security Organization,Notarial Survey Organization
+572,130506,政府机构及社会团体,公检法机构,社会治安机构,Governmental Organization & Social Group,Public Security Organization,Social Security Organization
+573,130600,政府机构及社会团体,交通车辆管理,交通车辆管理相关,Governmental Organization & Social Group,Traffic Vehicle Management,Traffic Vehicle Management Related
+574,130601,政府机构及社会团体,交通车辆管理,交通管理机构,Governmental Organization & Social Group,Traffic Vehicle Management,Traffic Management Authority
+575,130602,政府机构及社会团体,交通车辆管理,车辆管理机构,Governmental Organization & Social Group,Traffic Vehicle Management,Vehicle Management Authority
+576,130603,政府机构及社会团体,交通车辆管理,验车场,Governmental Organization & Social Group,Traffic Vehicle Management,Vehicle Assessment Service
+577,130604,政府机构及社会团体,交通车辆管理,交通执法站,Governmental Organization & Social Group,Traffic Vehicle Management,Traffic Management Station
+578,130605,政府机构及社会团体,交通车辆管理,车辆通行证办理处,Governmental Organization & Social Group,Traffic Vehicle Management,Vehicle Pass Card Office
+579,130606,政府机构及社会团体,交通车辆管理,货车相关检查站,Governmental Organization & Social Group,Traffic Vehicle Management,Truck Related Checkpoints
+580,130700,政府机构及社会团体,工商税务机构,工商税务机构,Governmental Organization & Social Group,Industrial and Commercial Taxation Institution,Industrial and Commercial Taxation Institution
+581,130701,政府机构及社会团体,工商税务机构,工商部门,Governmental Organization & Social Group,Industrial and Commercial Taxation Institution,Administration for Industry & Commerce
+582,130702,政府机构及社会团体,工商税务机构,国税机关,Governmental Organization & Social Group,Industrial and Commercial Taxation Institution,State Tax Authority
+583,130703,政府机构及社会团体,工商税务机构,地税机关,Governmental Organization & Social Group,Industrial and Commercial Taxation Institution,Local Tax Authority
+584,140000,科教文化服务,科教文化场所,科教文化场所,Science/Culture & Education Service,Science & Education Cultural Place,Science & Education Cultural Place
+585,140100,科教文化服务,博物馆,博物馆,Science/Culture & Education Service,Museum,Museum
+586,140101,科教文化服务,博物馆,奥迪博物馆,Science/Culture & Education Service,Museum,Audi Museum
+587,140102,科教文化服务,博物馆,梅赛德斯-奔驰博物馆,Science/Culture & Education Service,Museum,Mercedes-Benz Museum
+588,140200,科教文化服务,展览馆,展览馆,Science/Culture & Education Service,Exhibition Hall,Exhibition Hall
+589,140201,科教文化服务,展览馆,室内展位,Science/Culture & Education Service,Exhibition Hall,Indoor Booth
+590,140300,科教文化服务,会展中心,会展中心,Science/Culture & Education Service,Convention & Exhibition Center,Convention & Exhibition Center
+591,140400,科教文化服务,美术馆,美术馆,Science/Culture & Education Service,Art Gallery,Art Gallery
+592,140500,科教文化服务,图书馆,图书馆,Science/Culture & Education Service,Library,Library
+593,140600,科教文化服务,科技馆,科技馆,Science/Culture & Education Service,Science & Technology Museum,Science & Technology Museum
+594,140700,科教文化服务,天文馆,天文馆,Science/Culture & Education Service,Planetarium,Planetarium
+595,140800,科教文化服务,文化宫,文化宫,Science/Culture & Education Service,Cultural Palace,Cultural Palace
+596,140900,科教文化服务,档案馆,档案馆,Science/Culture & Education Service,Archives Hall,Archives Hall
+597,141000,科教文化服务,文艺团体,文艺团体,Science/Culture & Education Service,Arts Organization,Arts Organization
+598,141100,科教文化服务,传媒机构,传媒机构,Science/Culture & Education Service,Media Organization,Media Organization
+599,141101,科教文化服务,传媒机构,电视台,Science/Culture & Education Service,Media Organization,TV Station
+600,141102,科教文化服务,传媒机构,电台,Science/Culture & Education Service,Media Organization,Radio Station
+601,141103,科教文化服务,传媒机构,报社,Science/Culture & Education Service,Media Organization,Newspaper Office
+602,141104,科教文化服务,传媒机构,杂志社,Science/Culture & Education Service,Media Organization,Journal Publisher
+603,141105,科教文化服务,传媒机构,出版社,Science/Culture & Education Service,Media Organization,Publishing House
+604,141200,科教文化服务,学校,学校,Science/Culture & Education Service,School,School
+678,160000,金融保险服务,金融保险服务机构,金融保险机构,Finance & Insurance Service,Finance & Insurance Service Institution,Finance & Insurance Institution
+679,160100,金融保险服务,银行,银行,Finance & Insurance Service,Bank,Bank
+731,160200,金融保险服务,银行相关,银行相关,Finance & Insurance Service,Bank Related,Bank Related
+732,160300,金融保险服务,自动提款机,自动提款机,Finance & Insurance Service,ATM,ATM
+781,160400,金融保险服务,保险公司,保险公司,Finance & Insurance Service,Insurance Company,Insurance Company
+790,160500,金融保险服务,证券公司,证券公司,Finance & Insurance Service,Securities Company,Securities Company
+791,160501,金融保险服务,证券公司,证券营业厅,Finance & Insurance Service,Securities Company,Office of Securities Business
+792,160600,金融保险服务,财务公司,财务公司,Finance & Insurance Service,Finance Company,Finance Company
+793,170000,公司企业,公司企业,公司企业,Enterprises,Enterprises,Enterprises
+794,170100,公司企业,知名企业,知名企业,Enterprises,Famous Enterprise,Famous Enterprise
+795,170200,公司企业,公司,公司,Enterprises,Company,Company
+805,170300,公司企业,工厂,工厂,Enterprises,Factory,Factory
+830,190000,地名地址信息,地名地址信息,地名地址信息,Place Name & Address,Place Name & Address,Place Name & Address
+831,190100,地名地址信息,普通地名,普通地名,Place Name & Address,Normal Place Name,Normal Place Name
+841,190200,地名地址信息,自然地名,自然地名,Place Name & Address,Natural Place Name,Natural Place Name
+862,190300,地名地址信息,交通地名,交通地名,Place Name & Address,Transportation Place Name,Transportation Place Name
+863,190301,地名地址信息,交通地名,道路名,Place Name & Address,Transportation Place Name,Road Name
+879,190600,地名地址信息,标志性建筑物,标志性建筑物,Place Name & Address,Landmark Buildings,Landmark Buildings
+880,190700,地名地址信息,热点地名,热点地名,Place Name & Address,The hot names,The hot names

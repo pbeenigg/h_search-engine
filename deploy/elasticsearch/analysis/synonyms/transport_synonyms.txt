@@ -1,0 +1,291 @@
+# 交通枢纽同义词词典
+# 最后更新: 2025-11-13
+
+# ========== 机场 ==========
+# 北京
+首都机场,PEK,Capital Airport,北京首都国际机场
+大兴机场,PKX,Daxing Airport,北京大兴国际机场
+
+# 上海
+浦东机场,PVG,Pudong Airport,上海浦东国际机场
+虹桥机场,SHA,Hongqiao Airport,上海虹桥国际机场
+
+# 广州
+白云机场,CAN,Baiyun Airport,广州白云国际机场
+
+# 深圳
+宝安机场,SZX,Baoan Airport,深圳宝安国际机场
+
+# 杭州
+萧山机场,HGH,Xiaoshan Airport,杭州萧山国际机场
+
+# 南京
+禄口机场,NKG,Lukou Airport,南京禄口国际机场
+
+# 武汉
+天河机场,WUH,Tianhe Airport,武汉天河国际机场
+
+# 成都
+双流机场,CTU,Shuangliu Airport,成都双流国际机场
+
+# 西安
+咸阳机场,XIY,Xianyang Airport,西安咸阳国际机场
+
+# ========== 火车站 ==========
+# 北京
+北京站,Beijing Railway Station
+北京西站,Beijing West Railway Station
+北京南站,Beijing South Railway Station
+
+# 上海
+上海站,Shanghai Railway Station
+上海虹桥站,Shanghai Hongqiao Railway Station
+
+# 广州
+广州站,Guangzhou Railway Station
+广州南站,Guangzhou South Railway Station
+
+# 深圳
+深圳站,Shenzhen Railway Station
+深圳北站,Shenzhen North Railway Station
+深圳东站,Shenzhen East Railway Station
+福田站,Futian Railway Station
+
+# ========== 更多机场 ==========
+# 重庆
+江北机场,CKG,Jiangbei Airport,重庆江北国际机场
+
+# 厦门
+高崎机场,XMN,Gaoqi Airport,厦门高崎国际机场
+
+# 青岛
+流亭机场,TAO,Liuting Airport,青岛流亭国际机场
+胶东机场,TAO,Jiaodong Airport,青岛胶东国际机场
+
+# 大连
+周水子机场,DLC,Zhoushuizi Airport,大连周水子国际机场
+
+# 沈阳
+桃仙机场,SHE,Taoxian Airport,沈阳桃仙国际机场
+
+# 长沙
+黄花机场,CSX,Huanghua Airport,长沙黄花国际机场
+
+# 郑州
+新郑机场,CGO,Xinzheng Airport,郑州新郑国际机场
+
+# 南宁
+吴圩机场,NNG,Wuxu Airport,南宁吴圩国际机场
+
+# 昆明
+长水机场,KMG,Changshui Airport,昆明长水国际机场
+
+# 贵阳
+龙洞堡机场,KWE,Longdongbao Airport,贵阳龙洞堡国际机场
+
+# 兰州
+中川机场,LHW,Zhongchuan Airport,兰州中川国际机场
+
+# 乌鲁木齐
+地窝堡机场,URC,Diwopu Airport,乌鲁木齐地窝堡国际机场
+
+# 哈尔滨
+太平机场,HRB,Taiping Airport,哈尔滨太平国际机场
+
+# 长春
+龙嘉机场,CGQ,Longjia Airport,长春龙嘉国际机场
+
+# 海口
+美兰机场,HAK,Meilan Airport,海口美兰国际机场
+
+# 三亚
+凤凰机场,SYX,Phoenix Airport,三亚凤凰国际机场
+
+# 南京
+禄口机场,NKG,Lukou Airport,南京禄口国际机场
+
+# 无锡
+硕放机场,WUX,Suofang Airport,无锡硕放国际机场
+
+# 宁波
+栎社机场,NGB,Lishe Airport,宁波栎社国际机场
+
+# 温州
+龙湾机场,WNZ,Longwan Airport,温州龙湾国际机场
+
+# 合肥
+新桥机场,HFE,Xinqiao Airport,合肥新桥国际机场
+
+# 福州
+长乐机场,FOC,Changle Airport,福州长乐国际机场
+
+# 南昌
+昌北机场,KHN,Changbei Airport,南昌昌北国际机场
+
+# 济南
+遥墙机场,TNA,Yaoqiang Airport,济南遥墙国际机场
+
+# 烟台
+蓬莱机场,YNT,Penglai Airport,烟台蓬莱国际机场
+
+# 太原
+武宿机场,TYN,Wusu Airport,太原武宿国际机场
+
+# 石家庄
+正定机场,SJW,Zhengding Airport,石家庄正定国际机场
+
+# 呼和浩特
+白塔机场,HET,Baita Airport,呼和浩特白塔国际机场
+
+# 银川
+河东机场,INC,Hedong Airport,银川河东国际机场
+
+# 西宁
+曹家堡机场,XNN,Caojiabao Airport,西宁曹家堡机场
+
+# 拉萨
+贡嘎机场,LXA,Gonggar Airport,拉萨贡嘎机场
+
+# 香港
+香港机场,HKG,Hong Kong Airport,香港国际机场
+
+# 澳门
+澳门机场,MFM,Macau Airport,澳门国际机场
+
+# 台北
+桃园机场,TPE,Taoyuan Airport,台北桃园国际机场
+松山机场,TSA,Songshan Airport,台北松山机场
+
+# ========== 更多火车站 ==========
+# 杭州
+杭州站,Hangzhou Railway Station
+杭州东站,Hangzhou East Railway Station
+
+# 南京
+南京站,Nanjing Railway Station
+南京南站,Nanjing South Railway Station
+
+# 武汉
+武汉站,Wuhan Railway Station
+武昌站,Wuchang Railway Station
+汉口站,Hankou Railway Station
+
+# 成都
+成都站,Chengdu Railway Station
+成都东站,Chengdu East Railway Station
+成都南站,Chengdu South Railway Station
+
+# 西安
+西安站,Xi'an Railway Station
+西安北站,Xi'an North Railway Station
+
+# 重庆
+重庆站,Chongqing Railway Station
+重庆北站,Chongqing North Railway Station
+重庆西站,Chongqing West Railway Station
+
+# 天津
+天津站,Tianjin Railway Station
+天津西站,Tianjin West Railway Station
+天津南站,Tianjin South Railway Station
+
+# 苏州
+苏州站,Suzhou Railway Station
+苏州北站,Suzhou North Railway Station
+
+# 南通
+南通站,Nantong Railway Station
+南通西站,Nantong West Railway Station
+
+# 宁波
+宁波站,Ningbo Railway Station
+
+# 厦门
+厦门站,Xiamen Railway Station
+厦门北站,Xiamen North Railway Station
+
+# 福州
+福州站,Fuzhou Railway Station
+福州南站,Fuzhou South Railway Station
+
+# 长沙
+长沙站,Changsha Railway Station
+长沙南站,Changsha South Railway Station
+
+# 郑州
+郑州站,Zhengzhou Railway Station
+郑州东站,Zhengzhou East Railway Station
+
+# 济南
+济南站,Jinan Railway Station
+济南西站,Jinan West Railway Station
+
+# 青岛
+青岛站,Qingdao Railway Station
+青岛北站,Qingdao North Railway Station
+
+# 沈阳
+沈阳站,Shenyang Railway Station
+沈阳北站,Shenyang North Railway Station
+沈阳南站,Shenyang South Railway Station
+
+# 大连
+大连站,Dalian Railway Station
+大连北站,Dalian North Railway Station
+
+# 哈尔滨
+哈尔滨站,Harbin Railway Station
+哈尔滨西站,Harbin West Railway Station
+
+# 长春
+长春站,Changchun Railway Station
+长春西站,Changchun West Railway Station
+
+# 昆明
+昆明站,Kunming Railway Station
+昆明南站,Kunming South Railway Station
+
+# 贵阳
+贵阳站,Guiyang Railway Station
+贵阳北站,Guiyang North Railway Station
+
+# 兰州
+兰州站,Lanzhou Railway Station
+兰州西站,Lanzhou West Railway Station
+
+# 西宁
+西宁站,Xining Railway Station
+
+# 乌鲁木齐
+乌鲁木齐站,Urumqi Railway Station
+乌鲁木齐南站,Urumqi South Railway Station
+
+# 南宁
+南宁站,Nanning Railway Station
+南宁东站,Nanning East Railway Station
+
+# 海口
+海口站,Haikou Railway Station
+海口东站,Haikou East Railway Station
+
+# 三亚
+三亚站,Sanya Railway Station
+
+# 合肥
+合肥站,Hefei Railway Station
+合肥南站,Hefei South Railway Station
+
+# 南昌
+南昌站,Nanchang Railway Station
+南昌西站,Nanchang West Railway Station
+
+# 太原
+太原站,Taiyuan Railway Station
+太原南站,Taiyuan South Railway Station
+
+# 石家庄
+石家庄站,Shijiazhuang Railway Station
+
+# 呼和浩特
+呼和浩特站,Hohhot Railway Station
+呼和浩特东站,Hohhot East Railway Station

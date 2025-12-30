@@ -1,0 +1,204 @@
+server:
+  port: ${SERVER_PORT:18080}
+  servlet:
+    context-path: ${SERVER_PATH:/}
+
+spring:
+  profiles:
+    active:  ${SPRING_PROFILES_ACTIVE:dev} # 设置默认环境为dev
+  application:
+    name: ${SERVER_NAME:heytrip-hotel-search}
+
+# Sa-Token 配置
+sa-token:
+  token-name: Authorization
+  timeout: 86400
+  active-timeout: 1800
+  is-concurrent: true
+  is-share: false
+  token-style: uuid
+  is-log: false
+
+# 认证配置
+auth:
+  exclude-paths:
+    - /auth/**
+    - /health
+    - /actuator/**
+    - /swagger-ui/**
+    - /v1/api-docs/**
+    - /search/**
+    - /poi/**
+  sign-timeout-seconds: 10
+
+
+
+# SpringDoc配置
+springdoc:
+  api-docs:
+    enabled: ${SWAGGER_UI:true}
+    path: /v1/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: ${API_DOCS:true}
+    tags-sorter: alpha
+    operations-sorter: alpha
+  packages-to-scan: com.heytrip.hotel.search.api
+
+
+
+
+# Camel 配置
+camel:
+  # HTTP 组件配置
+  component:
+    http:
+      connect-timeout: 20000
+      so-timeout: 20000
+
+
+# Spring Boot Actuator 配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+
+# 高德POI采集配置
+amap:
+  ip:
+    base-url: https://restapi.amap.com/v3/ip
+    key: cd1e05524701a9985c9ffb00a03de316
+    geolite2: classpath:geolite2/GeoLite2-City.mmdb
+  poi:
+    api:
+      base-url: https://restapi.amap.com
+      keys:
+        - ${AMAP_API_KEY_1:cd1e05524701a9985c9ffb00a03de316}
+      key-rotation-strategy: ROUND_ROBIN
+      key-blacklist-duration: 3600
+      max-retry-per-key: 3
+      daily-quota-per-key: 1000
+      http-status-retry:
+        - 429
+        - 500
+        - 502
+        - 503
+        - 504
+
+    collect:
+      enabled: true
+      enabled-cities: []  # 为空表示采集所有城市
+      enabled-types: []   # 为空表示采集所有类型
+      page-size: 25
+      db-commit-size: 1000
+      detail-batch-size: 20
+      city-limit: true
+
+    performance:
+      max-concurrent-requests: 10
+      request-delay-ms: 200
+      timeout-ms: 30000
+      page-delay-ms: 1000
+
+    retry:
+      max-attempts: 3
+      base-delay-ms: 1000
+      max-delay-ms: 10000
+      backoff-multiplier: 2.0
+      base429-delay-ms: 5000
+
+    validation:
+      check-location: true
+      check-required-fields: true
+      location-bounds:
+        min-lng: 73.0
+        max-lng: 136.0
+        min-lat: 3.0
+        max-lat: 54.0
+
+
+
+heytrip:
+  # 酒店数据供应商接口配置
+  supplier:
+    base-url: http://39.108.194.81:9031
+    app: Pax
+    secret: Pax@20251027
+  # 通知邮件配置
+  mail:
+    enabled: false
+    host: smtp.tz.mail.wo.cn
+    port: 465
+    user: pax@heytripgo.com
+    pass: 59n-Evyy-d}-7V@k
+    from: pax@heytripgo.com
+    to: pax@heytripgo.com
+    ssl: true
+  # Elasticsearch 搜索配置
+  search:
+    # 智能搜索配置
+    smart:
+      hotel-index-size: 5      # 酒店索引每次搜索数量
+      poi-index-size: 2        # POI索引每次搜索数量
+      search-radius-km: 10     # 默认搜索半径（公里）
+      async-timeout-seconds: 3 # 异步搜索超时时间（秒）
+
+      # 搜索权重配置（已在HotelSearchWeights中定义，此处可覆盖）
+      keyword-weight: 0.6        # 关键词匹配权重（60%）
+      distance-weight: 0.4       # 距离权重（40%）
+
+      # 缓存配置
+      enable-query-cache: true   # 是否启用查询缓存
+      query-cache-ttl: 300       # 查询缓存TTL（秒）
+
+    # POI搜索配置
+    poi:
+      read-alias: amap_poi_read
+      write-alias: amap_poi_write
+      # 基础权重配置
+      name-cn-boost: 7.0
+      name-en-boost: 4.0
+      address-boost: 3.0
+      lat-lng-boost: 5.0
+
+    # 酒店搜索配置
+    hotel:
+      read-alias: hotels_read
+      write-alias: hotels_write
+      # 基础权重配置
+      name-cn-boost: 8.0
+      name-en-boost: 5.0
+      address-boost: 3.5
+      pinyin-boost: 4.0
+      address-pinyin-boost: 3.0
+      tokens-boost: 4.5
+      keywords-boost: 6.0
+      ner-places-boost: 4.0
+      ner-brands-boost: 7.0
+      address-tokens-boost: 4.5
+  # 搜索日志配置
+  search-log:
+    enabled: true
+    # Redis Stream 配置
+    stream-key: search:logs:stream
+    consumer-group: search-log-consumer-group
+    consumer-name: search-log-consumer-1
+
+    # 批量消费配置
+    batch-size: 500           # 每次最多读取500条
+    poll-interval-ms: 2000    # 每2秒轮询一次
+    block-ms: 100             # 阻塞等待100ms（避免空轮询）
+
+    # 告警配置
+    zero-result-threshold: 0.15      # 零结果率阈值 15%
+    min-queries-for-alert: 100       # 最小查询数（避免低流量误报）
+
+    # Redis Stream 维护配置
+    max-stream-length: 100000        # Stream 最大长度（超过后自动清理）
+    message-ttl-hours: 72
+

@@ -1,0 +1,79 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1,
+      "max_result_window": 10000,
+      "refresh_interval": "5s",
+      "analysis": {
+        "analyzer": {
+          "ik_smart_analyzer": {
+            "type": "ik_smart"
+          },
+          "ik_max_word_analyzer": {
+            "type": "ik_max_word"
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "dynamic": "false",
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "name": {
+        "type": "text",
+        "analyzer": "ik_smart"
+      },
+      "type": {
+        "type": "text",
+        "analyzer": "ik_smart"
+      },
+      "typecode": {
+        "type": "keyword"
+      },
+      "address": {
+        "type": "text",
+        "analyzer": "ik_smart"
+      },
+      "location": {
+        "type": "geo_point"
+      },
+      "lon": {
+        "type": "double"
+      },
+      "lat": {
+        "type": "double"
+      },
+      "citycode": {
+        "type": "keyword"
+      },
+      "cityname": {
+        "type": "keyword"
+      },
+      "adcode": {
+        "type": "keyword"
+      },
+      "adname": {
+        "type": "keyword"
+      },
+      "pcode": {
+        "type": "keyword"
+      },
+      "pname": {
+        "type": "keyword"
+      },
+      "sourceBatch": {
+        "type": "keyword"
+      },
+      "nameTokens": {
+        "type": "keyword"
+      },
+      "typeTokens": {
+        "type": "keyword"
+      }
+    }
+  }
+}

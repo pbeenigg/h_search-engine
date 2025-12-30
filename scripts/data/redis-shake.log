@@ -1,0 +1,5 @@
+{"level":"info","time":"2025-12-24T14:47:28+08:00","message":"log_level: [info], log_file: [/Users/pbeenig/Dev/HotelTrip/hotel-search-engine/scripts/data/redis-shake.log]"}
+{"level":"info","time":"2025-12-24T14:47:28+08:00","message":"changed work dir. dir=[/Users/pbeenig/Dev/HotelTrip/hotel-search-engine/scripts/data]"}
+{"level":"info","time":"2025-12-24T14:47:28+08:00","message":"GOMAXPROCS defaults to the value of runtime.NumCPU [12]"}
+{"level":"info","time":"2025-12-24T14:47:28+08:00","message":"not set pprof port"}
+{"level":"error","time":"2025-12-24T14:47:28+08:00","message":"no reader config entry found\n\t\t\tRedisShake/cmd/redis-shake/main.go:137 -> main()\n\t\t\truntime/proc.go:267 -> main()\n\t\t\truntime/asm_arm64.s:1197 -> goexit()"}

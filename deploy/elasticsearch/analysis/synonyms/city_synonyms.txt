@@ -1,0 +1,196 @@
+# 城市同义词词典
+# 最后更新: 2025-11-13
+
+# ========== 直辖市 ==========
+BJ,Beijing,Peking => 北京
+SH,Shanghai,魔都,申城 => 上海
+TJ,Tianjin => 天津
+CQ,Chongqing,山城 => 重庆
+
+# ========== 省会城市 ==========
+GZ,Guangzhou,羊城,花城 => 广州
+SZ,Shenzhen,鹏城 => 深圳
+HZ,Hangzhou => 杭州
+NJ,Nanjing,金陵 => 南京
+WH,Wuhan,江城 => 武汉
+CD,Chengdu,蓉城 => 成都
+XA,Xian,长安 => 西安
+SY,Shenyang => 沈阳
+DL,Dalian => 大连
+QD,Qingdao => 青岛
+XM,Xiamen,鹭岛 => 厦门
+CS,Changsha,星城 => 长沙
+ZZ,Zhengzhou => 郑州
+JN,Jinan,泉城 => 济南
+NC,Nanchang => 南昌
+KM,Kunming,春城 => 昆明
+NN,Nanning => 南宁
+HF,Hefei => 合肥
+FZ,Fuzhou,榕城 => 福州
+SJZ,Shijiazhuang => 石家庄
+TY,Taiyuan => 太原
+LZ,Lanzhou => 兰州
+HEB,Harbin,冰城 => 哈尔滨
+CC,Changchun => 长春
+
+# ========== 特别行政区 ==========
+HK,Hong Kong,香港 => 香港
+MO,Macau,澳门 => 澳门
+
+# ========== 台湾主要城市 ==========
+TPE,Taipei,台北 => 台北
+TXG,Taichung,台中 => 台中
+KHH,Kaohsiung,高雄 => 高雄
+TNN,Tainan,台南 => 台南
+
+# ========== 热门旅游城市 ==========
+SY,Sanya,三亚 => 三亚
+GL,Guilin,桂林 => 桂林
+LJ,Lijiang,丽江 => 丽江
+DL,Dali,大理 => 大理
+ZJJ,Zhangjiajie,张家界 => 张家界
+HK,Huangshan,黄山 => 黄山
+WYS,Wuyishan,武夷山 => 武夷山
+JH,Jiuzhaigou,九寨沟 => 九寨沟
+EM,Emeishan,峨眉山 => 峨眉山
+LS,Lhasa,拉萨 => 拉萨
+YC,Yinchuan,银川 => 银川
+XN,Xining,西宁 => 西宁
+WLM,Wulumuqi,乌鲁木齐 => 乌鲁木齐
+
+# ========== 长三角城市 ==========
+SZ,Suzhou,姑苏 => 苏州
+WX,Wuxi,无锡 => 无锡
+CZ,Changzhou,常州 => 常州
+NB,Ningbo,甬城 => 宁波
+WZ,Wenzhou,温州 => 温州
+JX,Jiaxing,嘉兴 => 嘉兴
+HZ,Huzhou,湖州 => 湖州
+SX,Shaoxing,绍兴 => 绍兴
+
+# ========== 珠三角城市 ==========
+ZH,Zhuhai,珠海 => 珠海
+FS,Foshan,佛山 => 佛山
+ZS,Zhongshan,中山 => 中山
+DG,Dongguan,东莞 => 东莞
+HZ,Huizhou,惠州 => 惠州
+JM,Jiangmen,江门 => 江门
+ZQ,Zhaoqing,肇庆 => 肇庆
+
+# ========== 其他重要城市 ==========
+YT,Yantai,烟台 => 烟台
+WF,Weifang,潍坊 => 潍坊
+ZB,Zibo,淄博 => 淄博
+TA,Taian,泰安 => 泰安
+LC,Liaocheng,聊城 => 聊城
+BD,Baoding,保定 => 保定
+TS,Tangshan,唐山 => 唐山
+QHD,Qinhuangdao,秦皇岛 => 秦皇岛
+WH,Weihai,威海 => 威海
+YZ,Yangzhou,扬州 => 扬州
+ZJ,Zhenjiang,镇江 => 镇江
+NT,Nantong,南通 => 南通
+XZ,Xuzhou,徐州 => 徐州
+LYG,Lianyungang,连云港 => 连云港
+
+# ========== 商圈和区域 ==========
+CBD,中央商务区,Central Business District
+三里屯,Sanlitun
+国贸,Guomao,国贸CBD
+王府井,Wangfujing
+西单,Xidan
+金融街,Financial Street
+中关村,Zhongguancun
+望京,Wangjing
+亚运村,Asian Games Village
+陆家嘴,Lujiazui
+人民广场,People's Square
+徐家汇,Xujiahui
+静安寺,Jing'an Temple
+淮海路,Huaihai Road
+新天地,Xintiandi
+田子坊,Tianzifang
+天河城,Tianhe City
+珠江新城,Zhujiang New Town
+北京路,Beijing Road
+上下九,Shangxiajiu
+体育西路,Tiyu West Road
+
+# ========== 北京商圈 ==========
+朝阳门,Chaoyangmen
+建国门,Jianguomen
+东直门,Dongzhimen
+西直门,Xizhimen
+复兴门,Fuxingmen
+崇文门,Chongwenmen
+前门,Qianmen
+后海,Houhai
+南锣鼓巷,Nanluoguxiang
+五道口,Wudaokou
+公主坟,Gongzhufen
+西红门,Xihongmen
+通州万达,Tongzhou Wanda
+
+# ========== 上海商圈 ==========
+南京西路,Nanjing West Road
+南京东路,Nanjing East Road
+四川北路,Sichuan North Road
+五角场,Wujiaochang
+中山公园,Zhongshan Park
+打浦桥,Dapuqiao
+大宁,Daning
+莘庄,Xinzhuang
+七宝,Qibao
+虹桥,Hongqiao
+浦东新区,Pudong New Area
+张江,Zhangjiang
+金桥,Jinqiao
+
+# ========== 广州商圈 ==========
+天河北,Tianhe North
+天河南,Tianhe South
+体育中心,Sports Center
+五羊新城,Wuyang New Town
+东山口,Dongshankou
+海珠广场,Haizhu Square
+沿江路,Yanjiang Road
+北京路步行街,Beijing Road Pedestrian Street
+长隆,Chimelong
+琶洲,Pazhou
+万博,Wanbo
+
+# ========== 深圳商圈 ==========
+福田中心区,Futian Central
+华强北,Huaqiangbei
+车公庙,Chegongmiao
+科技园,Science Park
+南山中心,Nanshan Center
+蛇口,Shekou
+前海,Qianhai
+罗湖口岸,Luohu Port
+东门,Dongmen
+宝安中心,Baoan Center
+龙华,Longhua
+坂田,Bantian
+
+# ========== 杭州商圈 ==========
+西湖文化广场,West Lake Cultural Square
+湖滨,Hubin
+延安路,Yanan Road
+庆春路,Qingchun Road
+钱江新城,Qianjiang New Town
+滨江,Binjiang
+未来科技城,Future Sci-Tech City
+萧山,Xiaoshan
+余杭,Yuhang
+
+# ========== 成都商圈 ==========
+盐市口,Yanshikou
+骡马市,Luomashi
+天府广场,Tianfu Square
+红牌楼,Hongpailou
+双楠,Shuangnan
+建设路,Jianshe Road
+沙湾,Shawan
+高新区,High-tech Zone
+天府新区,Tianfu New Area

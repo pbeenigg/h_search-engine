@@ -1,0 +1,4 @@
+tools:
+    - dartanalyzer@3.7.2
+    - trivy@0.66.0
+lyzer@3.7.2

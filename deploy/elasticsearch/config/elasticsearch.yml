@@ -1,0 +1,155 @@
+# ======================== Elasticsearch Configuration =========================
+#
+# NOTE: Elasticsearch comes with reasonable defaults for most settings.
+#       Before you set out to tweak and tune the configuration, make sure you
+#       understand what are you trying to accomplish and the consequences.
+#
+# The primary way of configuring a node is via this file. This template lists
+# the most important settings you may want to configure for a production cluster.
+#
+# Please consult the documentation for further information on configuration options:
+# https://www.elastic.co/guide/en/elasticsearch/reference/index.html
+#
+# ---------------------------------- Cluster -----------------------------------
+#
+# Use a descriptive name for your cluster:
+#
+cluster.name: hotel-search-cluster
+#
+# ------------------------------------ Node ------------------------------------
+#
+# Use a descriptive name for the node:
+#
+node.name: elasticsearch
+#
+# Add custom attributes to the node:
+#
+#node.attr.rack: r1
+#
+# Node roles
+node.roles: [ master, data, ingest ]
+#
+# ----------------------------------- Paths ------------------------------------
+#
+# Path to directory where to store the data (separate multiple locations by comma):
+#
+path.data: /usr/share/elasticsearch/data
+#
+# Path to log files:
+#
+path.logs: /usr/share/elasticsearch/logs
+#
+# Path to backup files:
+#
+##注意ES容器备份地址只能选择/usr/share/elasticsearch目录
+path.repo: ["/usr/share/elasticsearch/backup"]
+#
+#
+# ----------------------------------- Memory -----------------------------------
+#
+# Lock the memory on startup:
+#
+bootstrap.memory_lock: true
+#
+# Make sure that the heap size is set to about half the memory available
+# on the system and that the owner of the process is allowed to use this
+# limit.
+#
+# Elasticsearch performs poorly when the system is swapping the heap.
+#
+# ---------------------------------- Network -----------------------------------
+#
+# By default Elasticsearch is only accessible on localhost. Set a different
+# address here to expose this node on the network:
+#
+network.host: 0.0.0.0
+#
+# By default Elasticsearch listens for HTTP traffic on the first free port it
+# finds starting at 9200. Set a specific HTTP port here:
+#
+http.port: 9200
+#
+# For more information, consult the network module documentation.
+#
+# --------------------------------- Discovery ----------------------------------
+#
+# Pass an initial list of hosts to perform discovery when this node is started:
+# The default list of hosts is ["127.0.0.1", "[::1]"]
+#
+discovery.type: single-node
+#
+# Bootstrap the cluster using an initial set of master-eligible nodes:
+#
+#cluster.initial_master_nodes: ["node-1", "node-2"]
+#
+# For more information, consult the discovery and cluster formation module documentation.
+#
+# ---------------------------------- Gateway -----------------------------------
+#
+# Block initial recovery after a full cluster restart until N nodes are started:
+#
+#gateway.recover_after_nodes: 3
+#
+# For more information, consult the gateway module documentation.
+#
+# ---------------------------------- Various -----------------------------------
+#
+# Require explicit names when deleting indices:
+#
+action.destructive_requires_name: false
+#
+# ---------------------------------- Security ----------------------------------
+#
+# Disable security features
+xpack.security.enabled: false
+#
+# ---------------------------------- CORS Settings -----------------------------
+#
+# Enable CORS for browser access
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+http.cors.allow-headers: "X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization"
+http.cors.allow-credentials: true
+#
+# ---------------------------------- Monitoring --------------------------------
+#
+# Enable monitoring collection
+xpack.monitoring.collection.enabled: true
+#
+# ---------------------------------- Index defaults (迁移至模板) -----------------
+#
+# 说明：自 8.x 起，节点级配置不允许包含 index.* 配置。请通过“索引模板”设置默认值，例如：
+#
+# curl -X PUT "localhost:9200/_index_template/defaults" -H 'Content-Type: application/json' -d'
+# {
+#   "index_patterns": ["*"],
+#   "template": {
+#     "settings": {
+#       "index": {
+#         "refresh_interval": "30s",
+#         "number_of_shards": 1,
+#         "number_of_replicas": 0
+#       }
+#     }
+#   },
+#   "priority": 0,
+#   "_meta": {"description": "全局默认索引设置"}
+# }'
+
+# ---------------------------------- 磁盘与恢复优化 -----------------------------
+#
+# 启用磁盘阈值与水位线，防止磁盘不足导致写入阻塞（开发机常见）
+cluster.routing.allocation.disk.threshold_enabled: true
+# 使用“已使用磁盘百分比”阈值（low < high < flood_stage）
+# 建议：low=85%，high=90%，flood_stage=95%
+cluster.routing.allocation.disk.watermark.low: 85%
+cluster.routing.allocation.disk.watermark.high: 90%
+cluster.routing.allocation.disk.watermark.flood_stage: 95%
+
+# 控制分片恢复吞吐（防止开发机磁盘/CPU 被打满）
+indices.recovery.max_bytes_per_sec: 100mb
+indices.recovery.max_concurrent_operations: 2
+
+# HTTP 请求体限制（根据需要调整，避免过大请求导致 OOM）
+http.max_content_length: 200mb
+

@@ -1,0 +1,82 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.6
+    container_name: elasticsearch
+    environment:
+      - node.name=elasticsearch
+      - node.roles=master,data,ingest
+      - cluster.name=hotel-search-cluster
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms2g -Xmx4g"
+      - "TAKE_FILE_OWNERSHIP=true"
+      # ========== 安全认证配置 ==========
+      - xpack.security.enabled=true
+      - xpack.security.enrollment.enabled=false
+      # 内置用户密码（生产环境请使用强密码）
+      - ELASTIC_PASSWORD=DA6oHeV8sUbratbDDPnfSvLLGC1jk5FU
+      # 禁用 HTTPS（开发环境）
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.transport.ssl.enabled=false
+      # ========== 其他配置 ==========
+      - xpack.monitoring.collection.enabled=true
+      - action.destructive_requires_name=false
+    restart: unless-stopped
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - ./data:/usr/share/elasticsearch/data
+      - ./logs:/usr/share/elasticsearch/logs
+      - ./config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ./analysis:/usr/share/elasticsearch/config/analysis
+      - ./plugins:/usr/share/elasticsearch/plugins
+      - ./packages:/usr/share/elasticsearch/packages
+      - ./backup:/usr/share/elasticsearch/backup
+    ports:
+      - "19200:9200"
+      - "19300:9300"
+    networks:
+      - heytrip
+
+  elasticvue:
+    image: cars10/elasticvue:latest
+    container_name: elasticvue
+    environment:
+      # Elasticvue 需要在 Web UI 中手动配置认证信息
+      # 连接地址：http://elasticsearch:9200
+      # 用户名：elastic
+      # 密码：DA6oHeV8sUbratbDDPnfSvLLGC1jk5FU
+      - VUE_APP_ELASTICSEARCH_HOST=http://elasticsearch:19200
+    ports:
+      - "18080:8080"
+    depends_on:
+      - elasticsearch
+    networks:
+      - heytrip
+    profiles:
+      - elasticvue
+  elastic-hd:
+    image: containerize/elastichd:latest
+    container_name: elastic-hd
+    environment:
+      # Elastic-HD 使用 URL 中的认证信息
+      # 注意：密码中的特殊字符需要 URL 编码（% = %25）
+      - "ELASTICSEARCH_URL=http://elastic:hotel!!search!!engine1234@elasticsearch:9200"
+    ports:
+      - "19800:9800"
+    depends_on:
+      - elasticsearch
+    networks:
+      - heytrip
+    profiles:
+      - elastic-hd
+
+networks:
+  heytrip:
+    name: heytrip
+    external: true

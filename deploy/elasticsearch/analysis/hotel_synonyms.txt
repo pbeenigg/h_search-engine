@@ -1,0 +1,1739 @@
+# 酒店搜索同义词词典（主文件）
+# 最后更新: 2025-11-13 15:58:50
+#
+# 格式说明：
+# - A,B,C 表示双向同义词（A、B、C 互相等价）
+# - A,B => C 表示单向同义词（搜索 A 或 B 时转换为 C，但搜索 C 不会匹配 A 或 B）
+#
+# 文件组织：
+# - 本文件为汇总文件，包含所有同义词
+# - 分类文件位于 synonyms/ 目录下，便于分类管理
+# - 修改时建议直接修改分类文件，然后重新生成本文件
+#
+# 分类文件：
+# - synonyms/city_synonyms.txt       - 城市、商圈、区域
+# - synonyms/landmark_synonyms.txt   - 景点、地标
+# - synonyms/transport_synonyms.txt  - 机场、火车站
+# - synonyms/facility_synonyms.txt   - 设施、服务、房型
+# - synonyms/brand_synonyms.txt      - 品牌（补充）
+#
+# ⚠️  警告：本文件由脚本自动生成，请勿手动编辑！
+# ⚠️  如需修改，请编辑对应的分类文件，然后运行 merge_synonym_files.sh
+
+
+# ==========================================
+# 来源: synonyms/city_synonyms.txt
+# ==========================================
+
+
+# ========== 直辖市 ==========
+BJ,Beijing,Peking => 北京
+SH,Shanghai,魔都,申城 => 上海
+TJ,Tianjin => 天津
+CQ,Chongqing,山城 => 重庆
+
+# ========== 省会城市 ==========
+GZ,Guangzhou,羊城,花城 => 广州
+SZ,Shenzhen,鹏城 => 深圳
+HZ,Hangzhou => 杭州
+NJ,Nanjing,金陵 => 南京
+WH,Wuhan,江城 => 武汉
+CD,Chengdu,蓉城 => 成都
+XA,Xian,长安 => 西安
+SY,Shenyang => 沈阳
+DL,Dalian => 大连
+QD,Qingdao => 青岛
+XM,Xiamen,鹭岛 => 厦门
+CS,Changsha,星城 => 长沙
+ZZ,Zhengzhou => 郑州
+JN,Jinan,泉城 => 济南
+NC,Nanchang => 南昌
+KM,Kunming,春城 => 昆明
+NN,Nanning => 南宁
+HF,Hefei => 合肥
+FZ,Fuzhou,榕城 => 福州
+SJZ,Shijiazhuang => 石家庄
+TY,Taiyuan => 太原
+LZ,Lanzhou => 兰州
+HEB,Harbin,冰城 => 哈尔滨
+CC,Changchun => 长春
+
+# ========== 特别行政区 ==========
+HK,Hong Kong,香港 => 香港
+MO,Macau,澳门 => 澳门
+
+# ========== 台湾主要城市 ==========
+TPE,Taipei,台北 => 台北
+TXG,Taichung,台中 => 台中
+KHH,Kaohsiung,高雄 => 高雄
+TNN,Tainan,台南 => 台南
+
+# ========== 热门旅游城市 ==========
+SY,Sanya,三亚 => 三亚
+GL,Guilin,桂林 => 桂林
+LJ,Lijiang,丽江 => 丽江
+DL,Dali,大理 => 大理
+ZJJ,Zhangjiajie,张家界 => 张家界
+HK,Huangshan,黄山 => 黄山
+WYS,Wuyishan,武夷山 => 武夷山
+JH,Jiuzhaigou,九寨沟 => 九寨沟
+EM,Emeishan,峨眉山 => 峨眉山
+LS,Lhasa,拉萨 => 拉萨
+YC,Yinchuan,银川 => 银川
+XN,Xining,西宁 => 西宁
+WLM,Wulumuqi,乌鲁木齐 => 乌鲁木齐
+
+# ========== 长三角城市 ==========
+SZ,Suzhou,姑苏 => 苏州
+WX,Wuxi,无锡 => 无锡
+CZ,Changzhou,常州 => 常州
+NB,Ningbo,甬城 => 宁波
+WZ,Wenzhou,温州 => 温州
+JX,Jiaxing,嘉兴 => 嘉兴
+HZ,Huzhou,湖州 => 湖州
+SX,Shaoxing,绍兴 => 绍兴
+
+# ========== 珠三角城市 ==========
+ZH,Zhuhai,珠海 => 珠海
+FS,Foshan,佛山 => 佛山
+ZS,Zhongshan,中山 => 中山
+DG,Dongguan,东莞 => 东莞
+HZ,Huizhou,惠州 => 惠州
+JM,Jiangmen,江门 => 江门
+ZQ,Zhaoqing,肇庆 => 肇庆
+
+# ========== 其他重要城市 ==========
+YT,Yantai,烟台 => 烟台
+WF,Weifang,潍坊 => 潍坊
+ZB,Zibo,淄博 => 淄博
+TA,Taian,泰安 => 泰安
+LC,Liaocheng,聊城 => 聊城
+BD,Baoding,保定 => 保定
+TS,Tangshan,唐山 => 唐山
+QHD,Qinhuangdao,秦皇岛 => 秦皇岛
+WH,Weihai,威海 => 威海
+YZ,Yangzhou,扬州 => 扬州
+ZJ,Zhenjiang,镇江 => 镇江
+NT,Nantong,南通 => 南通
+XZ,Xuzhou,徐州 => 徐州
+LYG,Lianyungang,连云港 => 连云港
+
+# ========== 商圈和区域 ==========
+CBD,中央商务区,Central Business District
+三里屯,Sanlitun
+国贸,Guomao,国贸CBD
+王府井,Wangfujing
+西单,Xidan
+金融街,Financial Street
+中关村,Zhongguancun
+望京,Wangjing
+亚运村,Asian Games Village
+陆家嘴,Lujiazui
+人民广场,People's Square
+徐家汇,Xujiahui
+静安寺,Jing'an Temple
+淮海路,Huaihai Road
+新天地,Xintiandi
+田子坊,Tianzifang
+天河城,Tianhe City
+珠江新城,Zhujiang New Town
+北京路,Beijing Road
+上下九,Shangxiajiu
+体育西路,Tiyu West Road
+
+# ========== 北京商圈 ==========
+朝阳门,Chaoyangmen
+建国门,Jianguomen
+东直门,Dongzhimen
+西直门,Xizhimen
+复兴门,Fuxingmen
+崇文门,Chongwenmen
+前门,Qianmen
+后海,Houhai
+南锣鼓巷,Nanluoguxiang
+五道口,Wudaokou
+公主坟,Gongzhufen
+西红门,Xihongmen
+通州万达,Tongzhou Wanda
+
+# ========== 上海商圈 ==========
+南京西路,Nanjing West Road
+南京东路,Nanjing East Road
+四川北路,Sichuan North Road
+五角场,Wujiaochang
+中山公园,Zhongshan Park
+打浦桥,Dapuqiao
+大宁,Daning
+莘庄,Xinzhuang
+七宝,Qibao
+虹桥,Hongqiao
+浦东新区,Pudong New Area
+张江,Zhangjiang
+金桥,Jinqiao
+
+# ========== 广州商圈 ==========
+天河北,Tianhe North
+天河南,Tianhe South
+体育中心,Sports Center
+五羊新城,Wuyang New Town
+东山口,Dongshankou
+海珠广场,Haizhu Square
+沿江路,Yanjiang Road
+北京路步行街,Beijing Road Pedestrian Street
+长隆,Chimelong
+琶洲,Pazhou
+万博,Wanbo
+
+# ========== 深圳商圈 ==========
+福田中心区,Futian Central
+华强北,Huaqiangbei
+车公庙,Chegongmiao
+科技园,Science Park
+南山中心,Nanshan Center
+蛇口,Shekou
+前海,Qianhai
+罗湖口岸,Luohu Port
+东门,Dongmen
+宝安中心,Baoan Center
+龙华,Longhua
+坂田,Bantian
+
+# ========== 杭州商圈 ==========
+西湖文化广场,West Lake Cultural Square
+湖滨,Hubin
+延安路,Yanan Road
+庆春路,Qingchun Road
+钱江新城,Qianjiang New Town
+滨江,Binjiang
+未来科技城,Future Sci-Tech City
+萧山,Xiaoshan
+余杭,Yuhang
+
+# ========== 成都商圈 ==========
+盐市口,Yanshikou
+骡马市,Luomashi
+天府广场,Tianfu Square
+红牌楼,Hongpailou
+双楠,Shuangnan
+建设路,Jianshe Road
+沙湾,Shawan
+高新区,High-tech Zone
+天府新区,Tianfu New Area
+
+# ==========================================
+# 来源: synonyms/landmark_synonyms.txt
+# ==========================================
+
+
+# ========== 北京地标 ==========
+天安门,Tiananmen,天安门广场
+故宫,紫禁城,Forbidden City
+长城,Great Wall,万里长城
+颐和园,Summer Palace
+天坛,Temple of Heaven
+
+# ========== 上海地标 ==========
+外滩,The Bund
+东方明珠,Oriental Pearl Tower
+南京路,Nanjing Road
+豫园,Yu Garden
+陆家嘴,Lujiazui
+
+# ========== 广州地标 ==========
+小蛮腰,Canton Tower,广州塔
+珠江新城,Zhujiang New Town
+北京路,Beijing Road
+
+# ========== 杭州地标 ==========
+西湖,West Lake
+雷峰塔,Leifeng Pagoda
+灵隐寺,Lingyin Temple
+西溪湿地,Xixi Wetland
+武林广场,Wulin Square
+
+# ========== 西安地标 ==========
+兵马俑,Terracotta Warriors
+大雁塔,Big Wild Goose Pagoda
+钟楼,Bell Tower
+鼓楼,Drum Tower
+
+# ========== 成都地标 ==========
+宽窄巷子,Kuanzhai Alley
+锦里,Jinli
+春熙路,Chunxi Road
+太古里,Taikoo Li
+武侯祠,Wuhou Temple
+杜甫草堂,Du Fu Thatched Cottage
+青城山,Qingcheng Mountain
+都江堰,Dujiangyan
+
+# ========== 深圳地标 ==========
+世界之窗,Window of the World
+欢乐谷,Happy Valley
+东部华侨城,OCT East
+深圳湾公园,Shenzhen Bay Park
+莲花山公园,Lianhuashan Park
+大梅沙,Dameisha
+小梅沙,Xiaomeisha
+欢乐海岸,OCT Harbour
+海上世界,Sea World
+平安金融中心,Ping An Finance Center
+
+# ========== 南京地标 ==========
+中山陵,Sun Yat-sen Mausoleum
+明孝陵,Ming Xiaoling Mausoleum
+夫子庙,Confucius Temple
+秦淮河,Qinhuai River
+玄武湖,Xuanwu Lake
+总统府,Presidential Palace
+南京长江大桥,Nanjing Yangtze River Bridge
+鸡鸣寺,Jiming Temple
+牛首山,Niushou Mountain
+
+# ========== 苏州地标 ==========
+拙政园,Humble Administrator's Garden
+虎丘,Tiger Hill
+留园,Lingering Garden
+寒山寺,Hanshan Temple
+金鸡湖,Jinji Lake
+平江路,Pingjiang Road
+山塘街,Shantang Street
+狮子林,Lion Grove Garden
+网师园,Master of Nets Garden
+
+# ========== 重庆地标 ==========
+解放碑,Liberation Monument
+洪崖洞,Hongya Cave
+磁器口,Ciqikou
+长江索道,Yangtze River Cableway
+朝天门,Chaotianmen
+南山一棵树,Nanshan Tree
+大足石刻,Dazu Rock Carvings
+武隆天坑,Wulong Karst
+
+# ========== 武汉地标 ==========
+黄鹤楼,Yellow Crane Tower
+东湖,East Lake
+武汉长江大桥,Wuhan Yangtze River Bridge
+户部巷,Hubu Alley
+江汉路,Jianghan Road
+楚河汉街,Chu River Han Street
+武汉大学,Wuhan University
+归元寺,Guiyuan Temple
+
+# ========== 厦门地标 ==========
+鼓浪屿,Gulangyu Island
+南普陀寺,Nanputuo Temple
+厦门大学,Xiamen University
+曾厝垵,Zengcuoan
+环岛路,Huandao Road
+中山路步行街,Zhongshan Road
+白城沙滩,Baicheng Beach
+集美学村,Jimei School Village
+
+# ========== 青岛地标 ==========
+栈桥,Zhan Bridge
+八大关,Badaguan
+五四广场,May Fourth Square
+崂山,Laoshan
+青岛啤酒博物馆,Tsingtao Beer Museum
+小青岛,Little Qingdao
+信号山,Signal Hill
+奥帆中心,Olympic Sailing Center
+
+# ========== 三亚地标 ==========
+天涯海角,Tianya Haijiao
+亚龙湾,Yalong Bay
+蜈支洲岛,Wuzhizhou Island
+大东海,Dadonghai
+南山寺,Nanshan Temple
+鹿回头,Luhuitou
+海棠湾,Haitang Bay
+三亚湾,Sanya Bay
+
+# ========== 桂林地标 ==========
+漓江,Li River
+象鼻山,Elephant Trunk Hill
+两江四湖,Two Rivers and Four Lakes
+阳朔,Yangshuo
+龙脊梯田,Longji Rice Terraces
+银子岩,Silver Cave
+芦笛岩,Reed Flute Cave
+
+# ========== 西湖周边 ==========
+断桥,Broken Bridge
+苏堤,Su Causeway
+白堤,Bai Causeway
+三潭印月,Three Pools Mirroring the Moon
+平湖秋月,Autumn Moon over Calm Lake
+曲院风荷,Lotus in the Breeze at Crooked Courtyard
+柳浪闻莺,Orioles Singing in the Willows
+花港观鱼,Viewing Fish at Flower Harbor
+南屏晚钟,Evening Bell at Nanping Hill
+双峰插云,Twin Peaks Piercing the Clouds
+
+# ========== 上海新增地标 ==========
+城隍庙,City God Temple
+七宝老街,Qibao Old Street
+1933老场坊,1933 Shanghai
+武康路,Wukang Road
+思南路,Sinan Road
+多伦路,Duolun Road
+上海中心,Shanghai Tower
+环球金融中心,Shanghai World Financial Center
+金茂大厦,Jin Mao Tower
+
+# ========== 广州新增地标 ==========
+陈家祠,Chen Clan Ancestral Hall
+沙面,Shamian Island
+越秀公园,Yuexiu Park
+白云山,Baiyun Mountain
+长隆野生动物世界,Chimelong Safari Park
+广州塔,Canton Tower
+花城广场,Huacheng Square
+石室圣心大教堂,Sacred Heart Cathedral
+
+# ========== 香港地标 ==========
+维多利亚港,Victoria Harbour
+太平山,Victoria Peak
+尖沙咀,Tsim Sha Tsui
+铜锣湾,Causeway Bay
+中环,Central
+旺角,Mong Kok
+迪士尼乐园,Hong Kong Disneyland
+海洋公园,Ocean Park
+星光大道,Avenue of Stars
+兰桂坊,Lan Kwai Fong
+
+# ========== 澳门地标 ==========
+大三巴牌坊,Ruins of St. Paul's
+威尼斯人,The Venetian
+新葡京,Grand Lisboa
+渔人码头,Fisherman's Wharf
+妈阁庙,A-Ma Temple
+议事亭前地,Senado Square
+
+# ==========================================
+# 来源: synonyms/transport_synonyms.txt
+# ==========================================
+
+
+# ========== 机场 ==========
+# 北京
+首都机场,PEK,Capital Airport,北京首都国际机场
+大兴机场,PKX,Daxing Airport,北京大兴国际机场
+
+# 上海
+浦东机场,PVG,Pudong Airport,上海浦东国际机场
+虹桥机场,SHA,Hongqiao Airport,上海虹桥国际机场
+
+# 广州
+白云机场,CAN,Baiyun Airport,广州白云国际机场
+
+# 深圳
+宝安机场,SZX,Baoan Airport,深圳宝安国际机场
+
+# 杭州
+萧山机场,HGH,Xiaoshan Airport,杭州萧山国际机场
+
+# 南京
+禄口机场,NKG,Lukou Airport,南京禄口国际机场
+
+# 武汉
+天河机场,WUH,Tianhe Airport,武汉天河国际机场
+
+# 成都
+双流机场,CTU,Shuangliu Airport,成都双流国际机场
+
+# 西安
+咸阳机场,XIY,Xianyang Airport,西安咸阳国际机场
+
+# ========== 火车站 ==========
+# 北京
+北京站,Beijing Railway Station
+北京西站,Beijing West Railway Station
+北京南站,Beijing South Railway Station
+
+# 上海
+上海站,Shanghai Railway Station
+上海虹桥站,Shanghai Hongqiao Railway Station
+
+# 广州
+广州站,Guangzhou Railway Station
+广州南站,Guangzhou South Railway Station
+
+# 深圳
+深圳站,Shenzhen Railway Station
+深圳北站,Shenzhen North Railway Station
+深圳东站,Shenzhen East Railway Station
+福田站,Futian Railway Station
+
+# ========== 更多机场 ==========
+# 重庆
+江北机场,CKG,Jiangbei Airport,重庆江北国际机场
+
+# 厦门
+高崎机场,XMN,Gaoqi Airport,厦门高崎国际机场
+
+# 青岛
+流亭机场,TAO,Liuting Airport,青岛流亭国际机场
+胶东机场,TAO,Jiaodong Airport,青岛胶东国际机场
+
+# 大连
+周水子机场,DLC,Zhoushuizi Airport,大连周水子国际机场
+
+# 沈阳
+桃仙机场,SHE,Taoxian Airport,沈阳桃仙国际机场
+
+# 长沙
+黄花机场,CSX,Huanghua Airport,长沙黄花国际机场
+
+# 郑州
+新郑机场,CGO,Xinzheng Airport,郑州新郑国际机场
+
+# 南宁
+吴圩机场,NNG,Wuxu Airport,南宁吴圩国际机场
+
+# 昆明
+长水机场,KMG,Changshui Airport,昆明长水国际机场
+
+# 贵阳
+龙洞堡机场,KWE,Longdongbao Airport,贵阳龙洞堡国际机场
+
+# 兰州
+中川机场,LHW,Zhongchuan Airport,兰州中川国际机场
+
+# 乌鲁木齐
+地窝堡机场,URC,Diwopu Airport,乌鲁木齐地窝堡国际机场
+
+# 哈尔滨
+太平机场,HRB,Taiping Airport,哈尔滨太平国际机场
+
+# 长春
+龙嘉机场,CGQ,Longjia Airport,长春龙嘉国际机场
+
+# 海口
+美兰机场,HAK,Meilan Airport,海口美兰国际机场
+
+# 三亚
+凤凰机场,SYX,Phoenix Airport,三亚凤凰国际机场
+
+# 南京
+禄口机场,NKG,Lukou Airport,南京禄口国际机场
+
+# 无锡
+硕放机场,WUX,Suofang Airport,无锡硕放国际机场
+
+# 宁波
+栎社机场,NGB,Lishe Airport,宁波栎社国际机场
+
+# 温州
+龙湾机场,WNZ,Longwan Airport,温州龙湾国际机场
+
+# 合肥
+新桥机场,HFE,Xinqiao Airport,合肥新桥国际机场
+
+# 福州
+长乐机场,FOC,Changle Airport,福州长乐国际机场
+
+# 南昌
+昌北机场,KHN,Changbei Airport,南昌昌北国际机场
+
+# 济南
+遥墙机场,TNA,Yaoqiang Airport,济南遥墙国际机场
+
+# 烟台
+蓬莱机场,YNT,Penglai Airport,烟台蓬莱国际机场
+
+# 太原
+武宿机场,TYN,Wusu Airport,太原武宿国际机场
+
+# 石家庄
+正定机场,SJW,Zhengding Airport,石家庄正定国际机场
+
+# 呼和浩特
+白塔机场,HET,Baita Airport,呼和浩特白塔国际机场
+
+# 银川
+河东机场,INC,Hedong Airport,银川河东国际机场
+
+# 西宁
+曹家堡机场,XNN,Caojiabao Airport,西宁曹家堡机场
+
+# 拉萨
+贡嘎机场,LXA,Gonggar Airport,拉萨贡嘎机场
+
+# 香港
+香港机场,HKG,Hong Kong Airport,香港国际机场
+
+# 澳门
+澳门机场,MFM,Macau Airport,澳门国际机场
+
+# 台北
+桃园机场,TPE,Taoyuan Airport,台北桃园国际机场
+松山机场,TSA,Songshan Airport,台北松山机场
+
+# ========== 更多火车站 ==========
+# 杭州
+杭州站,Hangzhou Railway Station
+杭州东站,Hangzhou East Railway Station
+
+# 南京
+南京站,Nanjing Railway Station
+南京南站,Nanjing South Railway Station
+
+# 武汉
+武汉站,Wuhan Railway Station
+武昌站,Wuchang Railway Station
+汉口站,Hankou Railway Station
+
+# 成都
+成都站,Chengdu Railway Station
+成都东站,Chengdu East Railway Station
+成都南站,Chengdu South Railway Station
+
+# 西安
+西安站,Xi'an Railway Station
+西安北站,Xi'an North Railway Station
+
+# 重庆
+重庆站,Chongqing Railway Station
+重庆北站,Chongqing North Railway Station
+重庆西站,Chongqing West Railway Station
+
+# 天津
+天津站,Tianjin Railway Station
+天津西站,Tianjin West Railway Station
+天津南站,Tianjin South Railway Station
+
+# 苏州
+苏州站,Suzhou Railway Station
+苏州北站,Suzhou North Railway Station
+
+# 南通
+南通站,Nantong Railway Station
+南通西站,Nantong West Railway Station
+
+# 宁波
+宁波站,Ningbo Railway Station
+
+# 厦门
+厦门站,Xiamen Railway Station
+厦门北站,Xiamen North Railway Station
+
+# 福州
+福州站,Fuzhou Railway Station
+福州南站,Fuzhou South Railway Station
+
+# 长沙
+长沙站,Changsha Railway Station
+长沙南站,Changsha South Railway Station
+
+# 郑州
+郑州站,Zhengzhou Railway Station
+郑州东站,Zhengzhou East Railway Station
+
+# 济南
+济南站,Jinan Railway Station
+济南西站,Jinan West Railway Station
+
+# 青岛
+青岛站,Qingdao Railway Station
+青岛北站,Qingdao North Railway Station
+
+# 沈阳
+沈阳站,Shenyang Railway Station
+沈阳北站,Shenyang North Railway Station
+沈阳南站,Shenyang South Railway Station
+
+# 大连
+大连站,Dalian Railway Station
+大连北站,Dalian North Railway Station
+
+# 哈尔滨
+哈尔滨站,Harbin Railway Station
+哈尔滨西站,Harbin West Railway Station
+
+# 长春
+长春站,Changchun Railway Station
+长春西站,Changchun West Railway Station
+
+# 昆明
+昆明站,Kunming Railway Station
+昆明南站,Kunming South Railway Station
+
+# 贵阳
+贵阳站,Guiyang Railway Station
+贵阳北站,Guiyang North Railway Station
+
+# 兰州
+兰州站,Lanzhou Railway Station
+兰州西站,Lanzhou West Railway Station
+
+# 西宁
+西宁站,Xining Railway Station
+
+# 乌鲁木齐
+乌鲁木齐站,Urumqi Railway Station
+乌鲁木齐南站,Urumqi South Railway Station
+
+# 南宁
+南宁站,Nanning Railway Station
+南宁东站,Nanning East Railway Station
+
+# 海口
+海口站,Haikou Railway Station
+海口东站,Haikou East Railway Station
+
+# 三亚
+三亚站,Sanya Railway Station
+
+# 合肥
+合肥站,Hefei Railway Station
+合肥南站,Hefei South Railway Station
+
+# 南昌
+南昌站,Nanchang Railway Station
+南昌西站,Nanchang West Railway Station
+
+# 太原
+太原站,Taiyuan Railway Station
+太原南站,Taiyuan South Railway Station
+
+# 石家庄
+石家庄站,Shijiazhuang Railway Station
+
+# 呼和浩特
+呼和浩特站,Hohhot Railway Station
+呼和浩特东站,Hohhot East Railway Station
+
+# ==========================================
+# 来源: synonyms/facility_synonyms.txt
+# ==========================================
+
+
+# ========== 酒店类型 ==========
+酒店,宾馆,饭店,旅店,旅馆,Hotel
+度假村,度假酒店,Resort
+民宿,客栈,Homestay,B&B
+青年旅舍,青旅,Hostel,Youth Hostel
+公寓,公寓式酒店,Apartment,Serviced Apartment
+别墅,Villa
+精品酒店,Boutique Hotel
+商务酒店,Business Hotel
+经济型酒店,Budget Hotel
+星级酒店,Star Hotel
+豪华酒店,Luxury Hotel
+五星级酒店,5-Star Hotel,五星酒店
+四星级酒店,4-Star Hotel,四星酒店
+三星级酒店,3-Star Hotel,三星酒店
+
+# ========== 房型 ==========
+大床房,双人房,King Room,King Bed Room
+标准间,标间,Twin Room,Twin Bed Room
+单人间,单间,Single Room
+套房,Suite
+豪华套房,Deluxe Suite
+总统套房,Presidential Suite
+家庭房,Family Room
+三人间,Triple Room
+行政房,Executive Room
+商务房,Business Room
+
+# ========== 设施 ==========
+免费WiFi,Free WiFi,免费无线网络,WIFI
+停车场,Parking,免费停车
+游泳池,Swimming Pool,泳池
+健身房,Gym,Fitness Center
+早餐,Breakfast,自助早餐
+餐厅,Restaurant,中餐厅,西餐厅
+会议室,Meeting Room,会议厅
+商务中心,Business Center
+SPA,水疗,Spa Center
+
+# ========== 服务 ==========
+接送机,Airport Shuttle,机场接送
+洗衣服务,Laundry Service
+24小时前台,24-Hour Front Desk
+行李寄存,Luggage Storage
+禁烟房,Non-Smoking Room
+宠物友好,Pet Friendly
+叫醒服务,Wake-up Service
+礼宾服务,Concierge Service
+外币兑换,Currency Exchange
+快递服务,Express Service
+租车服务,Car Rental
+旅游咨询,Tour Desk
+票务服务,Ticketing Service
+儿童看护,Babysitting
+管家服务,Butler Service
+代客泊车,Valet Parking
+
+# ========== 更多房型 ==========
+复式套房,Duplex Suite
+蜜月套房,Honeymoon Suite
+亲子房,Parent-Child Room
+榻榻米房,Tatami Room
+日式房,Japanese Style Room
+海景房,Ocean View Room
+山景房,Mountain View Room
+湖景房,Lake View Room
+园景房,Garden View Room
+城景房,City View Room
+河景房,River View Room
+无障碍房,Accessible Room
+连通房,Connecting Room
+阁楼房,Loft Room
+工作室,Studio
+单卧室公寓,One Bedroom Apartment
+两卧室公寓,Two Bedroom Apartment
+三卧室公寓,Three Bedroom Apartment
+顶层套房,Penthouse Suite
+角落套房,Corner Suite
+主题房,Theme Room
+情侣房,Couple Room
+女士房,Ladies Room
+
+# ========== 床型 ==========
+特大床,King Size Bed
+大床,Queen Size Bed
+单人床,Single Bed
+双床,Twin Beds
+三张床,Three Beds
+上下铺,Bunk Bed
+沙发床,Sofa Bed
+加床,Extra Bed
+婴儿床,Baby Cot
+
+# ========== 更多设施 ==========
+# 娱乐设施
+KTV,卡拉OK,Karaoke
+棋牌室,Mahjong Room,麻将室
+台球室,Billiards Room
+乒乓球室,Table Tennis Room
+网球场,Tennis Court
+篮球场,Basketball Court
+足球场,Football Field
+高尔夫球场,Golf Course
+儿童游乐场,Children's Playground
+儿童乐园,Kids Club
+游戏室,Game Room
+图书馆,Library
+电影院,Cinema
+酒吧,Bar
+夜总会,Nightclub
+咖啡厅,Coffee Shop
+
+# 康体设施
+桑拿,Sauna
+蒸汽浴,Steam Room
+按摩,Massage
+美容美发,Beauty Salon
+瑜伽室,Yoga Room
+舞蹈室,Dance Studio
+室内泳池,Indoor Pool
+室外泳池,Outdoor Pool
+温泉,Hot Spring
+恒温泳池,Heated Pool
+无边泳池,Infinity Pool
+儿童泳池,Children's Pool
+
+# 商务设施
+打印服务,Printing Service
+复印服务,Copying Service
+传真服务,Fax Service
+投影仪,Projector
+音响设备,Audio Equipment
+视频会议,Video Conference
+同声传译,Simultaneous Interpretation
+展览厅,Exhibition Hall
+宴会厅,Banquet Hall
+多功能厅,Multi-function Hall
+
+# 房间设施
+空调,Air Conditioning,AC
+暖气,Heating
+电视,TV,Television
+有线电视,Cable TV
+卫星电视,Satellite TV
+冰箱,Refrigerator,Fridge
+迷你吧,Mini Bar
+保险箱,Safe,Safe Box
+吹风机,Hair Dryer
+电热水壶,Electric Kettle
+咖啡机,Coffee Machine
+熨斗,Iron
+熨衣板,Ironing Board
+拖鞋,Slippers
+浴袍,Bathrobe
+牙刷,Toothbrush
+牙膏,Toothpaste
+洗发水,Shampoo
+沐浴露,Shower Gel
+护发素,Conditioner
+润肤露,Body Lotion
+剃须刀,Razor
+梳子,Comb
+浴缸,Bathtub
+淋浴,Shower
+马桶,Toilet
+坐便器,Toilet Seat
+浴室,Bathroom
+卫生间,Restroom
+阳台,Balcony
+露台,Terrace
+书桌,Desk
+办公桌,Work Desk
+沙发,Sofa
+衣柜,Wardrobe
+衣架,Hanger
+窗帘,Curtain
+遮光窗帘,Blackout Curtain
+地毯,Carpet
+木地板,Wooden Floor
+瓷砖,Tile Floor
+
+# 其他设施
+电梯,Elevator,Lift
+无障碍设施,Accessible Facilities
+轮椅通道,Wheelchair Access
+残疾人设施,Disabled Facilities
+急救箱,First Aid Kit
+灭火器,Fire Extinguisher
+烟雾报警器,Smoke Detector
+监控摄像头,Security Camera
+门禁系统,Access Control
+自助入住,Self Check-in
+自助退房,Self Check-out
+自动售货机,Vending Machine
+自助洗衣,Laundromat
+干洗,Dry Cleaning
+熨烫服务,Ironing Service
+擦鞋服务,Shoe Shine
+送餐服务,Room Service
+客房服务,Housekeeping
+每日清洁,Daily Cleaning
+床单更换,Linen Change
+毛巾更换,Towel Change
+
+# 餐饮服务
+自助餐,Buffet
+点餐,A la Carte
+套餐,Set Menu
+儿童餐,Kids Meal
+素食,Vegetarian
+清真,Halal
+犹太洁食,Kosher
+无麸质,Gluten Free
+外卖,Takeaway
+送餐到房,In-room Dining
+下午茶,Afternoon Tea
+鸡尾酒,Cocktail
+红酒,Red Wine
+白酒,White Wine
+啤酒,Beer
+果汁,Juice
+咖啡,Coffee
+茶,Tea
+
+# 支付方式
+现金,Cash
+信用卡,Credit Card
+借记卡,Debit Card
+支付宝,Alipay
+微信支付,WeChat Pay
+银联,UnionPay
+Visa,Visa Card
+Mastercard,Master Card
+美国运通,American Express,Amex
+JCB,JCB Card
+预付,Prepaid
+到付,Pay on Arrival
+月结,Monthly Settlement
+
+# 政策
+免费取消,Free Cancellation
+不可取消,Non-refundable
+提前入住,Early Check-in
+延迟退房,Late Check-out
+标准入住时间,Standard Check-in Time
+标准退房时间,Standard Check-out Time
+押金,Deposit
+预授权,Pre-authorization
+发票,Invoice
+收据,Receipt
+确认单,Confirmation
+
+# ==========================================
+# 来源: synonyms/brand_synonyms.txt
+# ==========================================
+
+# 注意：品牌识别主要通过 HanLP 自定义词典实现，此文件作为补充
+
+# ========== 国际高端品牌 ==========
+希尔顿,Hilton
+万豪,Marriott
+洲际,IHG,InterContinental
+凯悦,Hyatt
+香格里拉,Shangri-La
+四季,Four Seasons
+丽思卡尔顿,Ritz-Carlton
+半岛,Peninsula
+文华东方,Mandarin Oriental
+悦榕庄,Banyan Tree
+安缦,Aman
+柏悦,Park Hyatt
+君悦,Grand Hyatt
+凯宾斯基,Kempinski
+
+# ========== 国际中高端品牌 ==========
+索菲特,Sofitel
+铂尔曼,Pullman
+诺富特,Novotel
+美居,Mercure
+宜必思,Ibis
+
+# ========== 国内连锁品牌 ==========
+如家,Home Inn
+汉庭,Hanting
+7天,7 Days Inn
+锦江之星,Jinjiang Inn
+格林豪泰,GreenTree Inn
+维也纳,Vienna Hotel
+亚朵,Atour
+全季,JI Hotel
+桔子,Orange Hotel
+开元,Kaiyuan
+华住,Huazhu
+首旅,BTG
+锦江,Jin Jiang
+东呈,Dossen
+尚美,Shangmei
+君澜,Narada
+世纪金源,Century Golden Resources
+碧桂园,Country Garden
+融创,Sunac
+万达,Wanda
+
+# ========== 国内高端品牌 ==========
+金陵,Jinling
+钓鱼台,Diaoyutai
+王府,Wangfu
+建国,Jianguo
+花间堂,Blossom Hill
+英迪格,Hotel Indigo
+康莱德,Conrad
+瑞吉,St. Regis
+艾迪逊,EDITION
+宝格丽,Bulgari
+阿丽拉,Alila
+涵碧楼,The Lalu
+
+# ========== 国内中端品牌 ==========
+和颐,Yitel
+桔子水晶,Crystal Orange
+漫心,Man Xin
+美仑,Mehood
+CitiGO,CitiGO
+喆啡,James Joyce
+麗枫,Lavande
+希岸,Xana
+怡程,E Hotel
+非繁,ZMAX
+潮漫,Z Hotel
+星程,Starway
+
+# ========== 国内经济型品牌 ==========
+海友,Hi Inn
+派,PAI Hotel
+宜必思尚品,Ibis Styles
+怡莱,Elan
+99旅馆,99 Inn
+布丁,Pod Inn
+速8,Super 8
+莫泰,Motel
+城市便捷,City Comfort Inn
+尚客优,Thank Inn
+
+# ========== 国际奢华品牌 ==========
+丽思卡尔顿,Ritz Carlton
+瑰丽,Rosewood
+华尔道夫,Waldorf Astoria
+康莱德,Conrad
+瑞吉,St Regis
+JW万豪,JW Marriott
+艾美,Le Meridien
+威斯汀,Westin
+喜来登,Sheraton
+W酒店,W Hotel
+豪华精选,Luxury Collection
+艾迪逊,EDITION
+宝格丽,Bulgari Hotels
+阿玛尼,Armani Hotels
+范思哲,Palazzo Versace
+费尔蒙,Fairmont
+瑞士酒店,Swissotel
+莱佛士,Raffles
+康拉德,Conrad
+
+# ========== 国际高端品牌 ==========
+万豪,Marriott
+希尔顿,Hilton
+洲际,InterContinental
+凯悦,Hyatt
+香格里拉,Shangri-La
+四季,Four Seasons
+半岛,Peninsula
+文华东方,Mandarin Oriental
+悦榕庄,Banyan Tree
+安缦,Aman
+柏悦,Park Hyatt
+君悦,Grand Hyatt
+凯宾斯基,Kempinski
+朗廷,Langham
+瑰丽,Rosewood
+丽晶,Regent
+卓美亚,Jumeirah
+罗莱夏朵,Relais & Chateaux
+璞富腾,Preferred Hotels
+傲途格,Autograph Collection
+
+# ========== 国际中高端品牌 ==========
+万怡,Courtyard
+万枫,Fairfield
+雅乐轩,Aloft
+源宿,Element
+福朋,Four Points
+逸衡,Tribute Portfolio
+希尔顿花园,Hilton Garden Inn
+希尔顿欢朋,Hampton
+希尔顿逸林,DoubleTree
+希尔顿嘉悦里,Canopy
+英迪格,Hotel Indigo
+智选假日,Holiday Inn Express
+皇冠假日,Crowne Plaza
+金普顿,Kimpton
+凯悦嘉轩,Hyatt Place
+凯悦嘉寓,Hyatt House
+凯悦臻选,Hyatt Centric
+凯悦尚萃,Andaz
+温德姆,Wyndham
+华美达,Ramada
+戴斯,Days Inn
+豪生,Howard Johnson
+
+# ========== 国际经济型品牌 ==========
+宜必思,Ibis
+宜必思尚品,Ibis Styles
+宜必思快捷,Ibis Budget
+B&B,B&B Hotels
+钟楼,Campanile
+郁金香,Golden Tulip
+最佳西方,Best Western
+速8,Super 8
+旅程,Travelodge
+红屋顶,Red Roof Inn
+汽车旅馆6,Motel 6
+经济旅馆,EconoLodge
+品质酒店,Quality Inn
+舒适酒店,Comfort Inn
+
+# ========== 度假村品牌 ==========
+Club Med,地中海俱乐部
+六善,Six Senses
+悦榕庄,Banyan Tree
+悦椿,Angsana
+阿丽拉,Alila
+安纳塔拉,Anantara
+卓美亚,Jumeirah
+One&Only,One&Only
+亚特兰蒂斯,Atlantis
+丽世,LUX
+康斯坦,Constance
+艾美,Le Meridien
+喜来登,Sheraton
+威斯汀,Westin
+万豪,Marriott
+
+# ========== 精品酒店品牌 ==========
+花间堂,Blossom Hill
+英迪格,Hotel Indigo
+金普顿,Kimpton
+25hours,25hours Hotels
+Ace Hotel,Ace Hotel
+Moxy,Moxy Hotels
+Mama Shelter,Mama Shelter
+citizenM,citizenM
+Generator,Generator Hostels
+
+
+# ==========================================
+# 新增：2025-11-18 大规模扩展同义词库
+# ==========================================
+
+# ========== 新增城市同义词 ==========
+# 华北地区
+承德,Chengde
+秦皇岛,Qinhuangdao
+保定,Baoding
+张家口,Zhangjiakou
+唐山,Tangshan
+廊坊,Langfang
+沧州,Cangzhou
+衡水,Hengshui
+邢台,Xingtai
+邯郸,Handan
+
+# 东北地区
+哈尔滨,Harbin
+大连,Dalian
+长春,Changchun
+沈阳,Shenyang
+鞍山,Anshan
+抚顺,Fushun
+本溪,Benxi
+丹东,Dandong
+锦州,Jinzhou
+营口,Yingkou
+阜新,Fuxin
+辽阳,Liaoyang
+盘锦,Panjin
+铁岭,Tieling
+朝阳,Chaoyang
+葫芦岛,Huludao
+吉林,Jilin
+四平,Siping
+辽源,Liaoyuan
+通化,Tonghua
+白山,Baishan
+松原,Songyuan
+白城,Baicheng
+延边,Yanbian
+
+# 西北地区
+西安,Xian
+宝鸡,Baoji
+咸阳,Xianyang
+铜川,Tongchuan
+渭南,Weinan
+延安,Yanan
+汉中,Hanzhong
+榆林,Yulin
+安康,Ankang
+商洛,Shangluo
+兰州,Lanzhou
+嘉峪关,Jiayuguan
+金昌,Jinchang
+白银,Baiyin
+天水,Tianshui
+武威,Wuwei
+张掖,Zhangye
+平凉,Pingliang
+酒泉,Jiuquan
+庆庆,庆阳,Qingyang
+定西,Dingxi
+陇南,Longnan
+临夏,Linxia
+甘南,Gannan
+银川,Yinchuan
+石嘴山,Shizuishan
+吴忠,Wuzhong
+固原,Guyuan
+中卫,Zhongwei
+西宁,Xining
+海东,Haidong
+海北,Haibei
+黄南,Huangnan
+海南,Hainan
+果洛,Guoluo
+玉树,Yushu
+海西,Haixi
+
+# 华中地区
+郑州,Zhengzhou
+开封,Kaifeng
+洛阳,Luoyang
+平顶山,Pingdingshan
+安阳,Anyang
+鹤壁,Hebi
+新乡,Xinxiang
+焦作,Jiaozuo
+濮阳,Puyang
+许昌,Xuchang
+漯河,Luohe
+三门峡,Sanmenxia
+南阳,Nanyang
+商丘,Shangqiu
+信阳,Xinyang
+周口,Zhoukou
+驻马店,Zhumadian
+济源,Jiyuan
+武汉,Wuhan
+黄石,Huangshi
+十堰,Shiyan
+宜昌,Yichang
+襄阳,Xiangyang
+鄂州,Ezhou
+荆门,Jingmen
+孝感,Xiaogan
+荆州,Jingzhou
+黄冈,Huanggang
+咸宁,Xianning
+随州,Suizhou
+恩施,Enshi
+仙桃,Xiantao
+潜江,Qianjiang
+天门,Tianmen
+神农架,Shennongjia
+
+# 华东其他城市
+福州,Fuzhou
+厦门,Xiamen
+莆田,Putian
+三明,Sanming
+泉州,Quanzhou
+漳州,Zhangzhou
+南平,Nanping
+龙岩,Longyan
+宁德,Ningde
+合肥,Hefei
+芜湖,Wuhu
+蚌埠,Bengbu
+淮南,Huainan
+马鞍山,Maanshan
+淮北,Huaibei
+铜陵,Tongling
+安庆,Anqing
+黄山,Huangshan
+滁州,Chuzhou
+阜阳,Fuyang
+宿州,Suzhou
+六安,Liu'an
+亳州,Bozhou
+池州,Chizhou
+宣城,Xuancheng
+济南,Jinan
+青岛,Qingdao
+淄博,Zibo
+枣庄,Zaozhuang
+东营,Dongying
+烟台,Yantai
+潍坊,Weifang
+济宁,Jining
+泰安,Tai'an
+威海,Weihai
+日照,Rizhao
+临沂,Linyi
+德州,Dezhou
+聊城,Liaocheng
+滨州,Binzhou
+菏泽,Heze
+
+# 华南地区
+海口,Haikou
+三亚,Sanya
+三沙,Sansha
+儋州,Danzhou
+琼海,Qionghai
+文昌,Wenchang
+万宁,Wanning
+东方,Dongfang
+定安,Ding'an
+屯昌,Tunchang
+澄迈,Chengmai
+临高,Lingao
+白沙,Baisha
+昌江,Changjiang
+乐东,Ledong
+陵水,Lingshui
+保亭,Baoting
+琼中,Qiongzhong
+绵阳,Mianyang
+德阳,Deyang
+南充,Nanchong
+眉山,Meishan
+乐山,Leshan
+内江,Neijiang
+遂宁,Suining
+广安,Guang'an
+巴中,Bazhong
+资阳,Ziyang
+自贡,Zigong
+攀枝花,Panzhihua
+泸州,Luzhou
+广元,Guangyuan
+达州,Dazhou
+雅安,Yaan
+甘孜,Ganzi
+阿坝,Aba
+凉山,Liangshan
+
+# ========== 新增商圈和地标 ==========
+# 上海新增商圈
+梅陇镇,Meilongzhen
+龙之梦,Long Zhi Meng
+大悦城,Dayue City
+来福士,Raffles City
+恒隆广场,Henglong Plaza
+IFC,International Finance Center
+正大广场,Zhengda Plaza
+八佰伴,Baibaiwan
+太平洋百货,Pacific Department Store
+
+# 北京新增商圈
+SKP,SKP
+蓝色港湾,Blue Harbor
+世茂天阶,Shimao Tianjie
+芳草地,Parkview Green
+侨福芳草地,Parkview Green
+三里屯太古里,Sanlitun Taikoo Li
+颐堤港,INDIGO
+凯德MALL,Kai De Mall
+朝阳大悦城,Chaoyang Dayue City
+西红门荟聚,Xihongmen IKEA
+
+# 广州新增商圈
+正佳广场,Zhengjia Plaza
+天河城,Tianhe City
+万菱汇,Wanlinghui
+太古汇,Taikoo Hui
+igc,igc
+K11,K11
+高德置地,GT Land
+白马服装市场,Baima Clothing Market
+十三行,Shisanhang
+
+# 深圳新增商圈
+海岸城,Coast City
+万象城,MixC World
+COCOPARK,COCOPARK
+益田假日广场,Yitian Holiday Plaza
+深业上城,Shenzhen Upper Hills
+海上世界,Sea World
+欢乐海岸,OCT Harbour
+东门步行街,Dongmen Pedestrian Street
+
+# 成都新增商圈
+IFS,IFS
+太古里,Taikoo Li
+银泰城,Yintai City
+龙湖北城天街,Longhu Beicheng Tiandi
+奥克斯广场,Aux Plaza
+锦华万达,Jinhu Wanda
+SM广场,SM Plaza
+凯德天府,Kai De Tianfu
+
+# ========== 新增交通枢纽 ==========
+首都国际机场,Capital International Airport
+大兴国际机场,Daxing International Airport
+浦东国际机场,Pudong International Airport
+虹桥机场,Hongqiao Airport
+白云国际机场,Baiyun International Airport
+宝安国际机场,Baoan International Airport
+双流国际机场,Shuangliu International Airport
+萧山国际机场,Xiaoshan International Airport
+咸阳国际机场,Xianyang International Airport
+禄口国际机场,Lukou International Airport
+地窝堡国际机场,Diwobao International Airport
+桃园国际机场,Taoyuan International Airport
+
+# ========== 新增酒店设施同义词 ==========
+# 客房设施
+免费WiFi,Free WiFi,高速网络
+有线网络,Cable Network,宽带网络
+无线网络,Wireless Network
+电视,TV,液晶电视,智能电视
+空调,Air Conditioning,中央空调
+暖气,Heating System
+迷你吧,Mini Bar,小冰箱
+保险箱,Safe,保险柜
+咖啡机,Coffee Maker,咖啡壶
+电热水壶,Electric Kettle,热水壶
+电吹风,Hair Dryer,吹风机
+浴缸,Bathtub,泡澡浴缸
+淋浴,Shower,花洒
+浴袍,Bathrobe,睡袍
+拖鞋,Slippers,一次性拖鞋
+牙刷,Toothbrush,牙刷套装
+洗发水,Shampoo,洗浴用品
+沐浴露,Body Wash,洗澡液
+毛巾,Towel,浴巾
+床品,Beddings,床单被套
+
+# 餐饮设施
+餐厅,Restaurant,自助餐厅
+中餐厅,Chinese Restaurant
+西餐厅,Western Restaurant
+日式餐厅,Japanese Restaurant
+韩式餐厅,Korean Restaurant
+泰式餐厅,Thai Restaurant
+意式餐厅,Italian Restaurant
+法式餐厅,French Restaurant
+自助早餐,Buffet Breakfast
+送餐服务,Room Service
+大堂酒吧,Lobby Bar
+屋顶酒吧,Roof Bar
+咖啡厅,Coffee Shop
+茶室,Tea House
+红酒窖,Wine Cellar
+
+# 商务设施
+会议室,Meeting Room,多功能厅
+商务中心,Business Center
+秘书服务,Secretary Service
+翻译服务,Translation Service
+打印服务,Printing Service
+传真服务,Fax Service
+复印服务,Copying Service
+电脑租赁,Computer Rental
+高速网络,High Speed Internet
+视频会议,Video Conference
+电话会议,Conference Call
+
+# 康体设施
+健身房,Gym,健身中心
+游泳池,Swimming Pool,室内泳池
+温泉,Spa,温泉浴
+桑拿,Sauna,汗蒸房
+蒸汽室,Steam Room
+按摩室,Massage Room
+瑜伽室,Yoga Room
+网球场,Tennis Court
+篮球场,Basketball Court
+羽毛球场,Badminton Court
+高尔夫球场,Golf Course
+台球室,Billiard Room
+棋牌室,Chess Room
+
+# 服务设施
+礼宾服务,Concierge Service
+前台服务,Front Desk Service
+客房服务,Housekeeping Service
+24小时服务,24-hour Service
+行李寄存,Luggage Storage
+自行车租赁,Bike Rental
+汽车租赁,Car Rental
+叫车服务,Taxi Service
+接送服务,Shuttle Service
+机场接送,Airport Transfer
+火车站接送,Train Station Transfer
+旅游咨询,Travel Information
+导游服务,Guide Service
+门票代购,Ticket Service
+购物服务,Shopping Service
+
+# ========== 新增酒店类型同义词 ==========
+# 按定位分类
+商务酒店,Business Hotel,商务型酒店
+度假酒店,Resort Hotel,度假村
+精品酒店,Boutique Hotel,设计酒店
+经济型酒店,Budget Hotel,经济酒店
+豪华酒店,Luxury Hotel,五星级酒店
+四星级酒店,4-star Hotel
+三星级酒店,3-star Hotel
+二星级酒店,2-star Hotel
+一星级酒店,1-star Hotel
+连锁酒店,Chain Hotel
+单体酒店,Independent Hotel
+
+# 按特色分类
+主题酒店,Themed Hotel,特色酒店
+家庭酒店,Family Hotel,亲子酒店
+宠物友好酒店,Pet-friendly Hotel
+女性专属酒店,Women-only Hotel
+精品民宿,Boutique Homestay
+温泉酒店,Spa Hotel
+海景酒店,Ocean View Hotel
+山景酒店,Mountain View Hotel
+城市酒店,City Hotel
+乡村酒店,Rural Hotel
+古镇酒店,Ancient Town Hotel
+海滩酒店,Beach Hotel
+滑雪酒店,Ski Hotel
+机场酒店,Airport Hotel
+火车站酒店,Train Station Hotel
+
+# ========== 新增价格区间同义词 ==========
+# 价格分类
+豪华价位,Luxury Range,高端价位
+中高端价位,Upper Mid-range
+中端价位,Mid-range
+经济价位,Budget Range,低价位
+特价优惠,Special Offer,促销价格
+会员价格,Member Price,会员价
+提前预订价,Advance Booking Price,提前预订优惠
+即时预订价,Instant Booking Price
+周末价格,Weekend Price
+工作日价格,Weekday Price
+淡季价格,Low Season Price
+旺季价格,High Season Price
+
+# ========== 新增品牌集团同义词 ==========
+# 万豪国际集团
+万豪国际,Marriott International
+万豪,Marriott
+丽思卡尔顿,Ritz Carlton
+JW万豪,JW Marriott
+万豪,Marriott
+威斯汀,Westin
+喜来登,Sheraton
+瑞吉,St.Regis
+豪华精选,Luxury Collection
+艾美,Le Meridien
+W酒店,W Hotel
+万丽,Renaissance
+艾迪逊,EDITION
+宝格丽,Bulgari
+丽思卡尔顿,Ritz Carlton
+JW万豪,JW Marriott
+万怡,Courtyard
+万枫,Fairfield
+雅乐轩,Aloft
+源宿,Element
+福朋,Four Points
+博舍,The Temple House
+璞隐,Atour
+
+# 希尔顿集团
+希尔顿,Hilton
+希尔顿,康莱德,Conrad
+希尔顿,希尔顿花园,Hilton Garden Inn
+希尔顿,希尔顿欢朋,Hampton
+希尔顿,希尔顿逸林,DoubleTree
+希尔顿,希尔顿嘉悦里,Canopy
+希尔顿,希尔顿格芮精选,Curio Collection
+希尔顿,希尔顿摩锚,Tapestry Collection
+希尔顿,希尔顿分时度假,Grand Wailea
+
+# 洲际集团
+洲际酒店集团,InterContinental Hotels Group
+洲际,InterContinental
+假日酒店,Holiday Inn
+皇冠假日,Crowne Plaza
+智选假日,Holiday Inn Express
+英迪格,Hotel Indigo
+金普顿,Kimpton
+华邑,HUAYI
+丽晶,Regent
+
+# 凯悦集团
+凯悦,Hyatt
+君悦,Grand Hyatt
+柏悦,Park Hyatt
+凯悦嘉轩,Hyatt Place
+凯悦嘉寓,Hyatt House
+凯悦臻选,Hyatt Centric
+凯悦尚萃,Andaz
+凯悦乐家,Hyatt House
+凯悦嘉寓,Hyatt House
+Hyatt,凯悦
+Hyatt Regency,凯悦
+Hyatt House,凯悦嘉寓
+Hyatt Place,凯悦嘉轩
+
+# 雅高集团
+雅高,Accor
+索菲特,Sofitel
+美居,Mercure
+宜必思,Ibis
+宜必思尚品,Ibis Styles
+诺富特,Novotel
+铂尔曼,Pullman
+瑞享,Movenpick
+美爵,Grand Mercure
+铂尔曼,Pullman
+美居,Mercure
+宜必思,Ibis
+莱佛士,Raffles
+费尔蒙,Fairmont
+瑞士酒店,Swissotel
+悦榕庄,Banyan Tree
+悦椿,Angsana
+
+# 中国酒店集团
+锦江酒店,Jinjiang Hotels
+锦江之星,Jinjiang Inn
+锦江,昆仑,Kunlun
+维也纳,Vienna Hotel
+7天,7Days
+如家,Home Inn
+汉庭,Hanting
+速8,Super 8
+华住酒店集团,Huazhu Hotels
+亚朵,Atour
+全季,JI Hotel
+桔子,Orange Hotel
+和颐,Yitel
+汉庭,Hanting
+海友,Hi Inn
+美居,Mercure
+尚客优,Thank Inn
+城市便捷,City Comfort Inn
+格林豪泰,GreenTree Inn
+开元,Kaiyuan
+君澜,Narada
+
+# 万达酒店集团
+万达,Wanda
+万达嘉华,Wanda Realm
+万达文华,Wanda Vista
+万达瑞华,Wanda Reign
+万达希尔顿,Wanda Hilton
+万达皇冠假日,Wanda Crowne Plaza
+
+# 融创酒店集团
+融创,Sunac
+融创皇冠假日,Sunac Crowne Plaza
+融创嘉华,Sunac Realm
+融创文华,Sunac Vista
+融创丽思卡尔顿,Sunac Ritz Carlton
+
+# 碧桂园酒店集团
+碧桂园,Country Garden
+凤凰优选,Phoenix Select
+凤凰国际,Phoenix International
+碧桂园假日,Country Garden Holiday
+碧桂园凤凰,Country Garden Phoenix
+
+# ========== 新增智能家居同义词 ==========
+智能客房,Smart Room,智能房间
+智能门锁,Smart Lock,电子门锁
+智能照明,Smart Lighting,调光系统
+智能窗帘,Smart Curtains,电动窗帘
+智能音响,Smart Speaker,音响系统
+智能电视,Smart TV,互联网电视
+智能马桶,Smart Toilet,智能坐便器
+语音助手,Voice Assistant,智能助手
+自动控制,Automatic Control,智能控制
+远程控制,Remote Control,远程操作
+定时预约,Timed Booking,预约服务
+移动端控制,Mobile Control,手机控制
+语音控制,Voice Control,声控系统
+手势控制,Gesture Control,手势识别
+人脸识别,Face Recognition,人脸解锁
+指纹识别,Fingerprint Recognition,指纹解锁
+密码锁,Password Lock,电子密码锁
+感应照明,Induction Lighting,感应灯
+自动调温,Automatic Temperature,智能温控
+
+# ========== 新增环保理念同义词 ==========
+绿色酒店,Green Hotel,环保酒店
+可持续发展,Sustainable Development
+碳中和,Carbon Neutral
+节能减排,Energy Saving,节能减碳
+可回收材料,Recyclable Materials
+环保理念,Eco-friendly Concept
+绿色认证,Green Certification
+节能设备,Energy-saving Equipment
+太阳能,Solar Energy
+地热能,Geothermal Energy
+风能,Wind Energy
+雨水收集,Rainwater Collection
+废水处理,Wastewater Treatment
+垃圾分类,Waste Sorting
+有机食品,Organic Food
+本地采购,Local Sourcing
+减少浪费,Waste Reduction
+资源再利用,Resource Reuse
+生态友好,Eco-friendly
+零废弃,Zero Waste

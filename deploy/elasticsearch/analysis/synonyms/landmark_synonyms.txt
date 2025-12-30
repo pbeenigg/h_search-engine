@@ -1,0 +1,190 @@
+# 地标同义词词典
+# 最后更新: 2025-11-13
+
+# ========== 北京地标 ==========
+天安门,Tiananmen,天安门广场
+故宫,紫禁城,Forbidden City
+长城,Great Wall,万里长城
+颐和园,Summer Palace
+天坛,Temple of Heaven
+
+# ========== 上海地标 ==========
+外滩,The Bund
+东方明珠,Oriental Pearl Tower
+南京路,Nanjing Road
+豫园,Yu Garden
+陆家嘴,Lujiazui
+
+# ========== 广州地标 ==========
+小蛮腰,Canton Tower,广州塔
+珠江新城,Zhujiang New Town
+北京路,Beijing Road
+
+# ========== 杭州地标 ==========
+西湖,West Lake
+雷峰塔,Leifeng Pagoda
+灵隐寺,Lingyin Temple
+西溪湿地,Xixi Wetland
+武林广场,Wulin Square
+
+# ========== 西安地标 ==========
+兵马俑,Terracotta Warriors
+大雁塔,Big Wild Goose Pagoda
+钟楼,Bell Tower
+鼓楼,Drum Tower
+
+# ========== 成都地标 ==========
+宽窄巷子,Kuanzhai Alley
+锦里,Jinli
+春熙路,Chunxi Road
+太古里,Taikoo Li
+武侯祠,Wuhou Temple
+杜甫草堂,Du Fu Thatched Cottage
+青城山,Qingcheng Mountain
+都江堰,Dujiangyan
+
+# ========== 深圳地标 ==========
+世界之窗,Window of the World
+欢乐谷,Happy Valley
+东部华侨城,OCT East
+深圳湾公园,Shenzhen Bay Park
+莲花山公园,Lianhuashan Park
+大梅沙,Dameisha
+小梅沙,Xiaomeisha
+欢乐海岸,OCT Harbour
+海上世界,Sea World
+平安金融中心,Ping An Finance Center
+
+# ========== 南京地标 ==========
+中山陵,Sun Yat-sen Mausoleum
+明孝陵,Ming Xiaoling Mausoleum
+夫子庙,Confucius Temple
+秦淮河,Qinhuai River
+玄武湖,Xuanwu Lake
+总统府,Presidential Palace
+南京长江大桥,Nanjing Yangtze River Bridge
+鸡鸣寺,Jiming Temple
+牛首山,Niushou Mountain
+
+# ========== 苏州地标 ==========
+拙政园,Humble Administrator's Garden
+虎丘,Tiger Hill
+留园,Lingering Garden
+寒山寺,Hanshan Temple
+金鸡湖,Jinji Lake
+平江路,Pingjiang Road
+山塘街,Shantang Street
+狮子林,Lion Grove Garden
+网师园,Master of Nets Garden
+
+# ========== 重庆地标 ==========
+解放碑,Liberation Monument
+洪崖洞,Hongya Cave
+磁器口,Ciqikou
+长江索道,Yangtze River Cableway
+朝天门,Chaotianmen
+南山一棵树,Nanshan Tree
+大足石刻,Dazu Rock Carvings
+武隆天坑,Wulong Karst
+
+# ========== 武汉地标 ==========
+黄鹤楼,Yellow Crane Tower
+东湖,East Lake
+武汉长江大桥,Wuhan Yangtze River Bridge
+户部巷,Hubu Alley
+江汉路,Jianghan Road
+楚河汉街,Chu River Han Street
+武汉大学,Wuhan University
+归元寺,Guiyuan Temple
+
+# ========== 厦门地标 ==========
+鼓浪屿,Gulangyu Island
+南普陀寺,Nanputuo Temple
+厦门大学,Xiamen University
+曾厝垵,Zengcuoan
+环岛路,Huandao Road
+中山路步行街,Zhongshan Road
+白城沙滩,Baicheng Beach
+集美学村,Jimei School Village
+
+# ========== 青岛地标 ==========
+栈桥,Zhan Bridge
+八大关,Badaguan
+五四广场,May Fourth Square
+崂山,Laoshan
+青岛啤酒博物馆,Tsingtao Beer Museum
+小青岛,Little Qingdao
+信号山,Signal Hill
+奥帆中心,Olympic Sailing Center
+
+# ========== 三亚地标 ==========
+天涯海角,Tianya Haijiao
+亚龙湾,Yalong Bay
+蜈支洲岛,Wuzhizhou Island
+大东海,Dadonghai
+南山寺,Nanshan Temple
+鹿回头,Luhuitou
+海棠湾,Haitang Bay
+三亚湾,Sanya Bay
+
+# ========== 桂林地标 ==========
+漓江,Li River
+象鼻山,Elephant Trunk Hill
+两江四湖,Two Rivers and Four Lakes
+阳朔,Yangshuo
+龙脊梯田,Longji Rice Terraces
+银子岩,Silver Cave
+芦笛岩,Reed Flute Cave
+
+# ========== 西湖周边 ==========
+断桥,Broken Bridge
+苏堤,Su Causeway
+白堤,Bai Causeway
+三潭印月,Three Pools Mirroring the Moon
+平湖秋月,Autumn Moon over Calm Lake
+曲院风荷,Lotus in the Breeze at Crooked Courtyard
+柳浪闻莺,Orioles Singing in the Willows
+花港观鱼,Viewing Fish at Flower Harbor
+南屏晚钟,Evening Bell at Nanping Hill
+双峰插云,Twin Peaks Piercing the Clouds
+
+# ========== 上海新增地标 ==========
+城隍庙,City God Temple
+七宝老街,Qibao Old Street
+1933老场坊,1933 Shanghai
+武康路,Wukang Road
+思南路,Sinan Road
+多伦路,Duolun Road
+上海中心,Shanghai Tower
+环球金融中心,Shanghai World Financial Center
+金茂大厦,Jin Mao Tower
+
+# ========== 广州新增地标 ==========
+陈家祠,Chen Clan Ancestral Hall
+沙面,Shamian Island
+越秀公园,Yuexiu Park
+白云山,Baiyun Mountain
+长隆野生动物世界,Chimelong Safari Park
+广州塔,Canton Tower
+花城广场,Huacheng Square
+石室圣心大教堂,Sacred Heart Cathedral
+
+# ========== 香港地标 ==========
+维多利亚港,Victoria Harbour
+太平山,Victoria Peak
+尖沙咀,Tsim Sha Tsui
+铜锣湾,Causeway Bay
+中环,Central
+旺角,Mong Kok
+迪士尼乐园,Hong Kong Disneyland
+海洋公园,Ocean Park
+星光大道,Avenue of Stars
+兰桂坊,Lan Kwai Fong
+
+# ========== 澳门地标 ==========
+大三巴牌坊,Ruins of St. Paul's
+威尼斯人,The Venetian
+新葡京,Grand Lisboa
+渔人码头,Fisherman's Wharf
+妈阁庙,A-Ma Temple
+议事亭前地,Senado Square

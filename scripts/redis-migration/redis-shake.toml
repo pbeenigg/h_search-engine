@@ -1,0 +1,66 @@
+# Redis-shake v4.x 配置文件
+# 用于从本地Redis迁移到远程Redis
+
+# 日志级别：debug, info, warn, error
+log_level = "info"
+
+# 日志文件路径
+log_file = "redis-shake.log"
+
+# ============== 源 Redis 配置（Reader）==============
+[sync_reader]
+# 集群模式：cluster 或 standalone
+cluster = false
+
+# 源Redis地址
+address = "localhost:6379"
+
+# 源Redis密码（如果有）
+# password = ""
+
+# 源Redis用户名（如果使用ACL）
+# username = ""
+
+# 是否启用TLS
+tls = false
+
+# 同步RDB文件（全量数据）
+sync_rdb = true
+
+# 同步AOF增量数据（设置为false则迁移完自动结束）
+sync_aof = false
+
+# 首选副本节点（减少主节点压力）
+prefer_replica = false
+
+# ============== 目标 Redis 配置（Writer）==============
+[redis_writer]
+# 集群模式：cluster 或 standalone  
+cluster = false
+
+# 目标Redis地址
+address = "8.210.191.60:6379"
+
+# 目标Redis密码
+password = "hotel!!search!!engine1234"
+
+# 目标Redis用户名（如果使用ACL）
+# username = ""
+
+# 是否启用TLS
+tls = false
+
+# ============== 高级配置 ==============
+[advanced]
+# 并发RDB reader数量（提升大文件读取速度）
+rdb_restore_command_behavior = "replicaof"
+
+# 目标Redis offline模式（更快但会阻塞）
+# target_redis_client_max_querybuf_len = 1024_000_000
+# target_redis_proto_max_bulk_len = 512_000_000
+
+# 日志间隔（秒）
+log_interval = 5
+
+# RDB并行度
+rdb_parallel = 4

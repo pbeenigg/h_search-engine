@@ -1,0 +1,254 @@
+# 设施和服务同义词词典
+# 最后更新: 2025-11-13
+
+# ========== 酒店类型 ==========
+酒店,宾馆,饭店,旅店,旅馆,Hotel
+度假村,度假酒店,Resort
+民宿,客栈,Homestay,B&B
+青年旅舍,青旅,Hostel,Youth Hostel
+公寓,公寓式酒店,Apartment,Serviced Apartment
+别墅,Villa
+精品酒店,Boutique Hotel
+商务酒店,Business Hotel
+经济型酒店,Budget Hotel
+星级酒店,Star Hotel
+豪华酒店,Luxury Hotel
+五星级酒店,5-Star Hotel,五星酒店
+四星级酒店,4-Star Hotel,四星酒店
+三星级酒店,3-Star Hotel,三星酒店
+
+# ========== 房型 ==========
+大床房,双人房,King Room,King Bed Room
+标准间,标间,Twin Room,Twin Bed Room
+单人间,单间,Single Room
+套房,Suite
+豪华套房,Deluxe Suite
+总统套房,Presidential Suite
+家庭房,Family Room
+三人间,Triple Room
+行政房,Executive Room
+商务房,Business Room
+
+# ========== 设施 ==========
+免费WiFi,Free WiFi,免费无线网络,WIFI
+停车场,Parking,免费停车
+游泳池,Swimming Pool,泳池
+健身房,Gym,Fitness Center
+早餐,Breakfast,自助早餐
+餐厅,Restaurant,中餐厅,西餐厅
+会议室,Meeting Room,会议厅
+商务中心,Business Center
+SPA,水疗,Spa Center
+
+# ========== 服务 ==========
+接送机,Airport Shuttle,机场接送
+洗衣服务,Laundry Service
+24小时前台,24-Hour Front Desk
+行李寄存,Luggage Storage
+禁烟房,Non-Smoking Room
+宠物友好,Pet Friendly
+叫醒服务,Wake-up Service
+礼宾服务,Concierge Service
+外币兑换,Currency Exchange
+快递服务,Express Service
+租车服务,Car Rental
+旅游咨询,Tour Desk
+票务服务,Ticketing Service
+儿童看护,Babysitting
+管家服务,Butler Service
+代客泊车,Valet Parking
+
+# ========== 更多房型 ==========
+复式套房,Duplex Suite
+蜜月套房,Honeymoon Suite
+亲子房,Parent-Child Room
+榻榻米房,Tatami Room
+日式房,Japanese Style Room
+海景房,Ocean View Room
+山景房,Mountain View Room
+湖景房,Lake View Room
+园景房,Garden View Room
+城景房,City View Room
+河景房,River View Room
+无障碍房,Accessible Room
+连通房,Connecting Room
+阁楼房,Loft Room
+工作室,Studio
+单卧室公寓,One Bedroom Apartment
+两卧室公寓,Two Bedroom Apartment
+三卧室公寓,Three Bedroom Apartment
+顶层套房,Penthouse Suite
+角落套房,Corner Suite
+主题房,Theme Room
+情侣房,Couple Room
+女士房,Ladies Room
+
+# ========== 床型 ==========
+特大床,King Size Bed
+大床,Queen Size Bed
+单人床,Single Bed
+双床,Twin Beds
+三张床,Three Beds
+上下铺,Bunk Bed
+沙发床,Sofa Bed
+加床,Extra Bed
+婴儿床,Baby Cot
+
+# ========== 更多设施 ==========
+# 娱乐设施
+KTV,卡拉OK,Karaoke
+棋牌室,Mahjong Room,麻将室
+台球室,Billiards Room
+乒乓球室,Table Tennis Room
+网球场,Tennis Court
+篮球场,Basketball Court
+足球场,Football Field
+高尔夫球场,Golf Course
+儿童游乐场,Children's Playground
+儿童乐园,Kids Club
+游戏室,Game Room
+图书馆,Library
+电影院,Cinema
+酒吧,Bar
+夜总会,Nightclub
+咖啡厅,Coffee Shop
+
+# 康体设施
+桑拿,Sauna
+蒸汽浴,Steam Room
+按摩,Massage
+美容美发,Beauty Salon
+瑜伽室,Yoga Room
+舞蹈室,Dance Studio
+室内泳池,Indoor Pool
+室外泳池,Outdoor Pool
+温泉,Hot Spring
+恒温泳池,Heated Pool
+无边泳池,Infinity Pool
+儿童泳池,Children's Pool
+
+# 商务设施
+打印服务,Printing Service
+复印服务,Copying Service
+传真服务,Fax Service
+投影仪,Projector
+音响设备,Audio Equipment
+视频会议,Video Conference
+同声传译,Simultaneous Interpretation
+展览厅,Exhibition Hall
+宴会厅,Banquet Hall
+多功能厅,Multi-function Hall
+
+# 房间设施
+空调,Air Conditioning,AC
+暖气,Heating
+电视,TV,Television
+有线电视,Cable TV
+卫星电视,Satellite TV
+冰箱,Refrigerator,Fridge
+迷你吧,Mini Bar
+保险箱,Safe,Safe Box
+吹风机,Hair Dryer
+电热水壶,Electric Kettle
+咖啡机,Coffee Machine
+熨斗,Iron
+熨衣板,Ironing Board
+拖鞋,Slippers
+浴袍,Bathrobe
+牙刷,Toothbrush
+牙膏,Toothpaste
+洗发水,Shampoo
+沐浴露,Shower Gel
+护发素,Conditioner
+润肤露,Body Lotion
+剃须刀,Razor
+梳子,Comb
+浴缸,Bathtub
+淋浴,Shower
+马桶,Toilet
+坐便器,Toilet Seat
+浴室,Bathroom
+卫生间,Restroom
+阳台,Balcony
+露台,Terrace
+书桌,Desk
+办公桌,Work Desk
+沙发,Sofa
+衣柜,Wardrobe
+衣架,Hanger
+窗帘,Curtain
+遮光窗帘,Blackout Curtain
+地毯,Carpet
+木地板,Wooden Floor
+瓷砖,Tile Floor
+
+# 其他设施
+电梯,Elevator,Lift
+无障碍设施,Accessible Facilities
+轮椅通道,Wheelchair Access
+残疾人设施,Disabled Facilities
+急救箱,First Aid Kit
+灭火器,Fire Extinguisher
+烟雾报警器,Smoke Detector
+监控摄像头,Security Camera
+门禁系统,Access Control
+自助入住,Self Check-in
+自助退房,Self Check-out
+自动售货机,Vending Machine
+自助洗衣,Laundromat
+干洗,Dry Cleaning
+熨烫服务,Ironing Service
+擦鞋服务,Shoe Shine
+送餐服务,Room Service
+客房服务,Housekeeping
+每日清洁,Daily Cleaning
+床单更换,Linen Change
+毛巾更换,Towel Change
+
+# 餐饮服务
+自助餐,Buffet
+点餐,A la Carte
+套餐,Set Menu
+儿童餐,Kids Meal
+素食,Vegetarian
+清真,Halal
+犹太洁食,Kosher
+无麸质,Gluten Free
+外卖,Takeaway
+送餐到房,In-room Dining
+下午茶,Afternoon Tea
+鸡尾酒,Cocktail
+红酒,Red Wine
+白酒,White Wine
+啤酒,Beer
+果汁,Juice
+咖啡,Coffee
+茶,Tea
+
+# 支付方式
+现金,Cash
+信用卡,Credit Card
+借记卡,Debit Card
+支付宝,Alipay
+微信支付,WeChat Pay
+银联,UnionPay
+Visa,Visa Card
+Mastercard,Master Card
+美国运通,American Express,Amex
+JCB,JCB Card
+预付,Prepaid
+到付,Pay on Arrival
+月结,Monthly Settlement
+
+# 政策
+免费取消,Free Cancellation
+不可取消,Non-refundable
+提前入住,Early Check-in
+延迟退房,Late Check-out
+标准入住时间,Standard Check-in Time
+标准退房时间,Standard Check-out Time
+押金,Deposit
+预授权,Pre-authorization
+发票,Invoice
+收据,Receipt
+确认单,Confirmation

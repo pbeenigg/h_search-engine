@@ -1,0 +1,199 @@
+# 品牌同义词词典
+# 最后更新: 2025-11-13
+# 注意：品牌识别主要通过 HanLP 自定义词典实现，此文件作为补充
+
+# ========== 国际高端品牌 ==========
+希尔顿,Hilton
+万豪,Marriott
+洲际,IHG,InterContinental
+凯悦,Hyatt
+香格里拉,Shangri-La
+四季,Four Seasons
+丽思卡尔顿,Ritz-Carlton
+半岛,Peninsula
+文华东方,Mandarin Oriental
+悦榕庄,Banyan Tree
+安缦,Aman
+柏悦,Park Hyatt
+君悦,Grand Hyatt
+凯宾斯基,Kempinski
+
+# ========== 国际中高端品牌 ==========
+索菲特,Sofitel
+铂尔曼,Pullman
+诺富特,Novotel
+美居,Mercure
+宜必思,Ibis
+
+# ========== 国内连锁品牌 ==========
+如家,Home Inn
+汉庭,Hanting
+7天,7 Days Inn
+锦江之星,Jinjiang Inn
+格林豪泰,GreenTree Inn
+维也纳,Vienna Hotel
+亚朵,Atour
+全季,JI Hotel
+桔子,Orange Hotel
+开元,Kaiyuan
+华住,Huazhu
+首旅,BTG
+锦江,Jin Jiang
+东呈,Dossen
+尚美,Shangmei
+君澜,Narada
+世纪金源,Century Golden Resources
+碧桂园,Country Garden
+融创,Sunac
+万达,Wanda
+
+# ========== 国内高端品牌 ==========
+金陵,Jinling
+钓鱼台,Diaoyutai
+王府,Wangfu
+建国,Jianguo
+花间堂,Blossom Hill
+英迪格,Hotel Indigo
+康莱德,Conrad
+瑞吉,St. Regis
+艾迪逊,EDITION
+宝格丽,Bulgari
+阿丽拉,Alila
+涵碧楼,The Lalu
+
+# ========== 国内中端品牌 ==========
+和颐,Yitel
+桔子水晶,Crystal Orange
+漫心,Man Xin
+美仑,Mehood
+CitiGO,CitiGO
+喆啡,James Joyce
+麗枫,Lavande
+希岸,Xana
+怡程,E Hotel
+非繁,ZMAX
+潮漫,Z Hotel
+星程,Starway
+
+# ========== 国内经济型品牌 ==========
+海友,Hi Inn
+派,PAI Hotel
+宜必思尚品,Ibis Styles
+怡莱,Elan
+99旅馆,99 Inn
+布丁,Pod Inn
+速8,Super 8
+莫泰,Motel
+城市便捷,City Comfort Inn
+尚客优,Thank Inn
+
+# ========== 国际奢华品牌 ==========
+丽思卡尔顿,Ritz Carlton
+瑰丽,Rosewood
+华尔道夫,Waldorf Astoria
+康莱德,Conrad
+瑞吉,St Regis
+JW万豪,JW Marriott
+艾美,Le Meridien
+威斯汀,Westin
+喜来登,Sheraton
+W酒店,W Hotel
+豪华精选,Luxury Collection
+艾迪逊,EDITION
+宝格丽,Bulgari Hotels
+阿玛尼,Armani Hotels
+范思哲,Palazzo Versace
+费尔蒙,Fairmont
+瑞士酒店,Swissotel
+莱佛士,Raffles
+康拉德,Conrad
+
+# ========== 国际高端品牌 ==========
+万豪,Marriott
+希尔顿,Hilton
+洲际,InterContinental
+凯悦,Hyatt
+香格里拉,Shangri-La
+四季,Four Seasons
+半岛,Peninsula
+文华东方,Mandarin Oriental
+悦榕庄,Banyan Tree
+安缦,Aman
+柏悦,Park Hyatt
+君悦,Grand Hyatt
+凯宾斯基,Kempinski
+朗廷,Langham
+瑰丽,Rosewood
+丽晶,Regent
+卓美亚,Jumeirah
+罗莱夏朵,Relais & Chateaux
+璞富腾,Preferred Hotels
+傲途格,Autograph Collection
+
+# ========== 国际中高端品牌 ==========
+万怡,Courtyard
+万枫,Fairfield
+雅乐轩,Aloft
+源宿,Element
+福朋,Four Points
+逸衡,Tribute Portfolio
+希尔顿花园,Hilton Garden Inn
+希尔顿欢朋,Hampton
+希尔顿逸林,DoubleTree
+希尔顿嘉悦里,Canopy
+英迪格,Hotel Indigo
+智选假日,Holiday Inn Express
+皇冠假日,Crowne Plaza
+金普顿,Kimpton
+凯悦嘉轩,Hyatt Place
+凯悦嘉寓,Hyatt House
+凯悦臻选,Hyatt Centric
+凯悦尚萃,Andaz
+温德姆,Wyndham
+华美达,Ramada
+戴斯,Days Inn
+豪生,Howard Johnson
+
+# ========== 国际经济型品牌 ==========
+宜必思,Ibis
+宜必思尚品,Ibis Styles
+宜必思快捷,Ibis Budget
+B&B,B&B Hotels
+钟楼,Campanile
+郁金香,Golden Tulip
+最佳西方,Best Western
+速8,Super 8
+旅程,Travelodge
+红屋顶,Red Roof Inn
+汽车旅馆6,Motel 6
+经济旅馆,EconoLodge
+品质酒店,Quality Inn
+舒适酒店,Comfort Inn
+
+# ========== 度假村品牌 ==========
+Club Med,地中海俱乐部
+六善,Six Senses
+悦榕庄,Banyan Tree
+悦椿,Angsana
+阿丽拉,Alila
+安纳塔拉,Anantara
+卓美亚,Jumeirah
+One&Only,One&Only
+亚特兰蒂斯,Atlantis
+丽世,LUX
+康斯坦,Constance
+艾美,Le Meridien
+喜来登,Sheraton
+威斯汀,Westin
+万豪,Marriott
+
+# ========== 精品酒店品牌 ==========
+花间堂,Blossom Hill
+英迪格,Hotel Indigo
+金普顿,Kimpton
+25hours,25hours Hotels
+Ace Hotel,Ace Hotel
+Moxy,Moxy Hotels
+Mama Shelter,Mama Shelter
+citizenM,citizenM
+Generator,Generator Hostels

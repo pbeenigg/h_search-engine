@@ -1,0 +1,77 @@
+
+name: hotel-search
+
+services:
+
+  # hotel search engine Service (JAR包部署)
+  hotel-search:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        JAR_FILE_PATH: ${JAR_FILE_PATH}
+      tags:
+        - "heytrip/search:${IMAGE_TAG:-latest}"
+        - "heytrip/search:${PROJECT_VERSION:-1.0.0-SNAPSHOT}"
+    image: "heytrip/search:${IMAGE_TAG:-latest}"
+    container_name: hotel-search
+    environment:
+      # 时区设置
+      TZ: Asia/Shanghai
+      # Spring Boot 基础配置
+      SPRING_PROFILES_ACTIVE: prod
+      SERVER_SERVLET_CONTEXT_PATH: /
+      SERVER_PORT: 18080
+
+      # 文档功能开关
+      SWAGGER_UI: false
+      API_DOCS: true
+
+      # HanLP 词典和模型路径（必须与 volume 挂载路径一致）
+      HANLP_ROOT: /app/hanlp/
+
+      # 数据库配置（使用外部数据库）
+      DB_URL: jdbc:mysql://pc-j6c1oer259zv98w65.rwlb.rds.aliyuncs.com:3306/hotel_search_pax?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+      DB_USERNAME: xwd_pax_0389516
+      DB_PASSWORD: lJfGo#Kgj$6H29y!1q&0SpDf4G*oi
+      DB_DRIVER: com.mysql.cj.jdbc.Driver
+
+      # Elasticsearch 配置
+      ES_URIS: http://172.27.13.15:19200
+      ES_USERNAME: elastic
+      ES_PASSWORD: DA6oHeV8sUbratbDDPnfSvLLGC1jk5FU
+
+      # Redis 配置
+      REDIS_HOST: 172.27.13.15
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: hotel!!search!!engine1234
+      REDIS_DB: 0
+
+      
+      # JVM配置
+      JAVA_OPTS: -Xmx4g -Xms2g -XX:+UseG1GC -XX:+UseContainerSupport -XX:MaxRAMPercentage=80 -XX:G1HeapRegionSize=16m -XX:MaxGCPauseMillis=200 -Duser.timezone=Asia/Shanghai
+      
+    ports:
+      - "${HOST_PORT:-18080}:18080"
+    volumes:
+      - ./logs/app:/app/logs
+      - ./csv:/app/csv
+      - ./hanlp:/app/hanlp
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:18080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+    restart: unless-stopped
+    networks:
+      - heytrip
+    profiles:
+      - "backend"
+      - "full"
+
+
+networks:
+  heytrip:
+    name: heytrip
+    external: true

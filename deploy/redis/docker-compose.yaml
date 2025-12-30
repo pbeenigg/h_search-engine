@@ -1,0 +1,38 @@
+
+services:
+  redis:
+    image: redis:7.0.10
+    container_name: redis
+    volumes:
+      - ./datadir:/data
+      - ./conf/redis.conf:/usr/local/etc/redis/redis.conf
+      # 日志使用标准输出，通过 docker logs redis 查看
+    command: redis-server /usr/local/etc/redis/redis.conf
+    ports:
+      # 使用宿主机的端口映射到容器的端口
+      # 宿主机：容器
+      - 6379:6379
+    networks:
+      - heytrip
+    environment:
+      TZ: Asia/Shanghai
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    # 注意：系统参数优化需要在宿主机上设置，请执行：
+    # sudo sysctl -w vm.overcommit_memory=1
+    # sudo sysctl -w net.core.somaxconn=1024
+    # echo never > /sys/kernel/mm/transparent_hugepage/enabled
+
+volumes:
+  redis_data:
+    driver: local
+
+networks:
+  heytrip:
+    name: heytrip
+    external: true

@@ -1,0 +1,38 @@
+{
+  "index": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1,
+    "max_result_window": 10000,
+    "refresh_interval": "5s",
+    "analysis": {
+      "analyzer": {
+        "std_lc": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "asciifolding"]
+        },
+        "pinyin_analyzer": {
+          "type": "custom",
+          "tokenizer": "pinyin",
+          "filter": ["lowercase"]
+        },
+        "cn_ik_max_syn": {
+          "type": "custom",
+          "tokenizer": "ik_max_word",
+          "filter": ["lowercase"]
+        },
+        "cn_ik_smart_syn": {
+          "type": "custom",
+          "tokenizer": "ik_smart",
+          "filter": ["lowercase"]
+        }
+      },
+      "normalizer": {
+        "lowercase_normalizer": {
+          "type": "custom",
+          "filter": ["lowercase"]
+        }
+      }
+    }
+  }
+}

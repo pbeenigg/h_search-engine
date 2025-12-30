@@ -1,0 +1,130 @@
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"log_level: [info], log_file: [/Users/pbeenig/Dev/HotelTrip/hotel-search-engine/scripts/data/shake.log]"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"changed work dir. dir=[/Users/pbeenig/Dev/HotelTrip/hotel-search-engine/scripts/data]"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"GOMAXPROCS defaults to the value of runtime.NumCPU [12]"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"not set pprof port"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"create SyncStandaloneReader"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* address: localhost:6379"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* username: "}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* password: "}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* tls: false"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"create RedisStandaloneWriter"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* address: 8.210.191.60:6379"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* username: "}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* password: *************************"}
+{"level":"info","time":"2025-12-24T14:50:09+08:00","message":"* tls: false"}
+{"level":"error","time":"2025-12-24T14:50:10+08:00","message":"dial failed. address=[8.210.191.60:6379], tls=[false], err=[dial tcp 8.210.191.60:6379: i/o timeout]\n\t\t\tRedisShake/internal/client/redis.go:53 -> NewRedisClient()\n\t\t\tRedisShake/internal/writer/redis_standalone_writer.go:54 -> NewRedisStandaloneWriter()\n\t\t\tRedisShake/cmd/redis-shake/main.go:177 -> main()\n\t\t\truntime/proc.go:267 -> main()\n\t\t\truntime/asm_arm64.s:1197 -> goexit()"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"log_level: [info], log_file: [/Users/pbeenig/Dev/HotelTrip/hotel-search-engine/scripts/data/shake.log]"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"changed work dir. dir=[/Users/pbeenig/Dev/HotelTrip/hotel-search-engine/scripts/data]"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"GOMAXPROCS defaults to the value of runtime.NumCPU [12]"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"not set pprof port"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"create SyncStandaloneReader"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* address: localhost:6379"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* username: "}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* password: "}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* tls: false"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"create RedisStandaloneWriter"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* address: 8.210.191.60:6379"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* username: "}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* password: *************************"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"* tls: false"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"start syncing..."}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"set target redis max qps to 300000"}
+{"level":"info","time":"2025-12-24T14:54:32+08:00","message":"[reader_localhost_6379] source db is not doing bgsave! continue."}
+{"level":"info","time":"2025-12-24T14:54:37+08:00","message":"read_count=[27234], read_ops=[0.00], write_count=[27233], write_ops=[0.00], syncing rdb, size=[0 B/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:54:42+08:00","message":"read_count=[47552], read_ops=[9511.55], write_count=[47551], write_ops=[9511.35], syncing rdb, size=[0 B/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:54:47+08:00","message":"read_count=[76907], read_ops=[5870.16], write_count=[76906], write_ops=[5870.16], syncing rdb, size=[0 B/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:54:52+08:00","message":"read_count=[101066], read_ops=[4832.56], write_count=[101065], write_ops=[4832.56], syncing rdb, size=[2.6 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:54:57+08:00","message":"read_count=[159604], read_ops=[11706.83], write_count=[159603], write_ops=[11706.83], syncing rdb, size=[16 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:02+08:00","message":"read_count=[219924], read_ops=[12063.82], write_count=[219923], write_ops=[12063.82], syncing rdb, size=[30 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:07+08:00","message":"read_count=[243486], read_ops=[4712.60], write_count=[243485], write_ops=[4712.60], syncing rdb, size=[30 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:12+08:00","message":"read_count=[265256], read_ops=[4353.74], write_count=[265255], write_ops=[4353.74], syncing rdb, size=[30 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:17+08:00","message":"read_count=[288949], read_ops=[4738.76], write_count=[288948], write_ops=[4738.76], syncing rdb, size=[30 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:22+08:00","message":"read_count=[311852], read_ops=[4580.01], write_count=[311851], write_ops=[4580.01], syncing rdb, size=[30 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:27+08:00","message":"read_count=[335486], read_ops=[4726.69], write_count=[335485], write_ops=[4726.69], syncing rdb, size=[33 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:32+08:00","message":"read_count=[358446], read_ops=[4592.08], write_count=[358445], write_ops=[4592.08], syncing rdb, size=[33 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:37+08:00","message":"read_count=[382462], read_ops=[4803.09], write_count=[382461], write_ops=[4803.09], syncing rdb, size=[35 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:42+08:00","message":"read_count=[430964], read_ops=[9700.73], write_count=[430963], write_ops=[9700.73], syncing rdb, size=[35 MiB/49 MiB]"}
+{"level":"info","time":"2025-12-24T14:55:47+08:00","message":"read_count=[440347], read_ops=[1876.68], write_count=[440347], write_ops=[1876.88], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:55:52+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:55:57+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:02+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:07+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:12+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:17+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:22+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:27+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:32+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:37+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:42+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:47+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:52+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:56:57+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:02+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:07+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:12+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:17+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:22+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:27+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:32+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:37+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:42+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:47+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:52+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:57:57+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:02+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:07+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:12+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:17+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:22+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:27+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:32+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:37+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:42+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:47+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:52+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:58:57+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:02+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:07+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:12+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:17+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:22+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:27+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:32+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:37+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:42+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:47+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:52+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T14:59:57+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:02+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:07+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:12+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:17+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:22+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:27+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:32+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:37+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:42+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:47+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:52+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:00:57+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:02+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:07+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:12+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:17+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:22+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:27+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:32+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:37+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:42+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:47+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:52+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:01:57+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:02+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:07+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:12+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:17+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:22+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:27+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:32+08:00","message":"read_count=[440347], read_ops=[0.00], write_count=[440347], write_ops=[0.00], syncing aof, diff=[0]"}
+{"level":"info","time":"2025-12-24T15:02:35+08:00","message":"Got signal: interrupt to exit. Press Ctrl+C again to force exit."}
+{"level":"info","time":"2025-12-24T15:02:35+08:00","message":"all done"}
